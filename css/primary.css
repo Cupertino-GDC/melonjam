@@ -52,6 +52,7 @@ body, html {
 }
 
 .navbutton {
+    display: inline-block;
     font-size: 32px;
     color: rgb(73, 228, 34);
     font-weight: 700;
@@ -175,4 +176,31 @@ body, html {
     text-align: center;
     color: rgb(73, 228, 34);
     font-family: 'Century Gothic', sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+    .faq {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    #navbar {
+        text-align: center;
+    }
+
+    #navbar-logo {
+        display: none;
+    }
+
+    .navbutton {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #header-logo {
+        width: 95vw;
+        height: 95vw;
+    }
 }
