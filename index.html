@@ -5,6 +5,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+	<!-- Page Preview Information -->
+	<meta property="og:title" content="MelonJam">
+	<meta property="twitter:title" content="MelonJam">
+	<meta property="og:description" content="MelonJam is...">
+	<meta property="twitter:description" content="MelonJam is...">
+	<meta property="og:image" content="images/melon_withBG.png">
+	<meta property="twitter:image" content="images/melon_withBG.png">
+	<meta property="og:url" content="https://cupertino-gdc.github.io/melonjam/">
+	<link rel="shortcut icon" href="images/melon_noText.png"/>
+
+	<!-- CSS stylesheets -->
+	<link rel="stylesheet" href="css/primary.css">
+
 	<!-- Bootstrap -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -17,14 +30,23 @@
 
 </head>
 
-<body>
+<body style="background-color: rgb(197, 239, 246)">
 
-	<nav id="navbar">
+	<div style="text-align: center;">
+		<nav id="navbar">
+			<a href=""><img src="images/melon_noText.png" alt="test" id="navbar-logo"></a>
+			<a class="navbutton" href="">About</a>
+			<a class="navbutton" href="">Sponsors</a>
+			<a class="navbutton" href="" style="margin-right: 0;">FAQ</a>
+		</nav>
 
-  <h1>MelonJam</h1>
+		<img src="images/melon.png" alt="MelonJam" id="header-logo" onclick="window.location.href = 'index.html'">
 
-	<img src="images/test.jpeg" alt="test">
+		<br>
 
+		<a href="https://www.itch.io" id="join-button">Join Now!</a>
+
+	</div>
 </body>
 
 </html>
