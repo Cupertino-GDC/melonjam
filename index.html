@@ -18,6 +18,12 @@
 	<!-- CSS stylesheets -->
 	<link rel="stylesheet" href="css/primary.css">
 
+	<!-- JavaScripts -->
+	<script type="text/javascript" src="js/primary.js"></script>
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 	<!-- Bootstrap -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -32,21 +38,96 @@
 
 <body style="background-color: rgb(197, 239, 246)">
 
-	<div style="text-align: center;">
+	<div id="header-div" >
 		<nav id="navbar">
-			<a href=""><img src="images/melon_noText.png" alt="test" id="navbar-logo"></a>
-			<a class="navbutton" href="">About</a>
-			<a class="navbutton" href="">Sponsors</a>
-			<a class="navbutton" href="" style="margin-right: 0;">FAQ</a>
+			<a href="#"><img src="images/melon_noText.png" alt="test" id="navbar-logo"></a>
+			<a class="navbutton" href="#about">About</a>
+			<a class="navbutton" href="#sponsors">Sponsors</a>
+			<a class="navbutton" href="#FAQ" style="margin-right: 0;">FAQ</a>
 		</nav>
 
 		<img src="images/melon.png" alt="MelonJam" id="header-logo" onclick="window.location.href = 'index.html'">
 
-		<br>
+		<br><br>
 
 		<a href="https://www.itch.io" id="join-button">Join Now!</a>
 
 	</div>
+
+	<br><br><br><br>
+
+	<div id="about-div">
+		<br><br>
+		<h1 style="font-size: 42px; font-weight: 600;">About MelonJam:</h1>
+		<h1 style="width: 1000px; margin: auto; line-height: 1.75; font-weight: 400; font-size: 32px; font-family: 'Poppins', sans-serif;">
+			MelonJam is a rather epic jam. However, its epicness is nothing in comparision to the
+			Cupertino Game Development Club (GDC). Led by president Mr. Ryan Lee, GDC has made a
+			name for itself throughout Cupertino High School. Mr. Ted McLeod, the club's advisor and an
+			extremely well-respected Computer Science teacher, speaks highly of the GDC, placing it
+			#3 in his greatest achievements of all time.
+		</h1>
+		<br><br><br>
+	</div>
+
+	<div id="sponsors-div">
+
+		<h1 style="font-size: 42px; font-weight: 600; font-family: 'Century Gothic', sans-serif;">MelonJam Sponsors:</h1>
+		<br>
+
+		<div class="sponsor">Sponsor 1</div>
+		<div class="sponsor">Sponsor 2</div>
+		<div class="sponsor">Sponsor 3</div>
+		<br>
+		<div class="sponsor">Sponsor 4</div>
+		<div class="sponsor">Sponsor 5</div>
+		<div class="sponsor">Sponsor 6</div>
+
+	</div>
+
+	<div id="faq-div">
+		<br><br>
+		<h1 style="font-size: 42px; font-weight: 600; font-family: 'Century Gothic', sans-serif;">Frequently Asked Questions:</h1>
+		<br>
+
+		<div class="faq" onclick="expandFAQ(this)" onmouseover="enterHoverFAQ(this)" onmouseout="exitHoverFAQ(this)">
+			<h1>What is MelonJam?</h1>
+			<!-- <p>
+				MelonJam is a rather epic jam. However, its epicness is nothing in comparision to the
+				Cupertino Game Development Club (GDC). Led by president Mr. Ryan Lee, GDC has made a
+				name for itself throughout Cupertino High School. Mr. Ted McLeod, the club's advisor and an
+				extremely well-respected Computer Science teacher, speaks highly of the GDC, placing it
+				#3 in his greatest achievements of all time.
+			</p> -->
+		</div>
+
+		<div class="faq" onclick="expandFAQ(this)" onmouseover="enterHoverFAQ(this)" onmouseout="exitHoverFAQ(this)">
+			<h1>Who is MelonJam?</h1>
+		</div>
+
+		<div class="faq" onclick="expandFAQ(this)" onmouseover="enterHoverFAQ(this)" onmouseout="exitHoverFAQ(this)">
+			<h1>Why is MelonJam?</h1>
+		</div>
+
+		<br>
+
+		<div class="faq" onclick="expandFAQ(this)" onmouseover="enterHoverFAQ(this)" onmouseout="exitHoverFAQ(this)">
+			<h1>Where is MelonJam?</h1>
+		</div>
+
+		<div class="faq" onclick="expandFAQ(this)" onmouseover="enterHoverFAQ(this)" onmouseout="exitHoverFAQ(this)">
+			<h1>When is MelonJam?</h1>
+		</div>
+
+		<div class="faq" onclick="expandFAQ(this)" onmouseover="enterHoverFAQ(this)" onmouseout="exitHoverFAQ(this)">
+			<h1>How is MelonJam?</h1>
+		</div>
+
+	</div>
+
+	<footer id="footer">
+		<h1>Footer</h1>
+	</footer>
+
 </body>
 
 </html>
