@@ -40,10 +40,10 @@
 
 	<div id="header-div" >
 		<nav id="navbar">
-			<a href="#"><img src="images/melon_noText.png" alt="test" id="navbar-logo"></a>
-			<a class="navbutton" href="#about">About</a>
-			<a class="navbutton" href="#sponsors">Sponsors</a>
-			<a class="navbutton" href="#FAQ" style="margin-right: 0;">FAQ</a>
+			<a href="#" onclick="scrollToTop()"><img src="images/melon_noText.png" alt="test" id="navbar-logo"></a>
+			<a class="navbutton" href="#about" onclick="scrollToElement('about-div')">About</a>
+			<a class="navbutton" href="#sponsors" onclick="scrollToElement('sponsors-div')">Sponsors</a>
+			<a class="navbutton" href="#FAQ" onclick="scrollToElement('faq-div')">FAQ</a>
 		</nav>
 
 		<img src="images/melon.png" alt="MelonJam" id="header-logo" onclick="scrollToTop()">
@@ -66,11 +66,11 @@
 			extremely well-respected Computer Science teacher, speaks highly of the GDC, placing it
 			#3 in his greatest achievements of all time.
 		</h1>
-		<br><br><br>
+		<br>
 	</div>
 
 	<div id="sponsors-div">
-
+		<br><br>
 		<h1 style="font-size: 42px; font-weight: 600; font-family: 'Century Gothic', sans-serif;">MelonJam Sponsors:</h1>
 		<br>
 
