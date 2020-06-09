@@ -7,38 +7,51 @@ function scrollToTop() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
+function readMore() {
+    var moreText = document.getElementById("about-more-text");
+    var btnText = document.getElementById("read-more-button");
+
+    if (moreText.style.display === "inline") {
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+    } else {
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+    }
+}
+
 function expandFAQ(i) {
     var faq = document.getElementsByClassName('faq')[i];
     var faqText = document.getElementsByClassName('faq-answer')[i];
 
-    if(faq.style.height === "400px") { // compress
+    if(faqText.style.display === "block") { // compress
 
+        faqText.style.display = "none";
         faq.style.height = "auto";
         faq.style.backgroundColor = "initial";
-        faqText.style.display = "none";
 
     } else { // expand
 
-        faq.style.height = "400px";
-        faq.style.backgroundColor = "rgba(255, 195, 103, 1.0)";
         faqText.style.display = "block";
+        faq.style.height = "auto";
+        faq.style.backgroundColor = "rgba(255, 195, 103, 1.0)";
 
     }
 
 }
 
-function enterHoverFAQ(element) {
+function enterHoverFAQ(i) {
 
-    if(element.style.height != "400px") {
-        element.style.backgroundColor = "rgba(255, 195, 103, 0.5)";
+    if(document.getElementsByClassName('faq-answer')[i].style.display != "block") {
+        document.getElementsByClassName('faq')[i].style.backgroundColor = "rgba(255, 195, 103, 0.5)";
     }
 
 }
 
-function exitHoverFAQ(element) {
+function exitHoverFAQ(i) {
 
-    if(element.style.height != "400px") {
-        element.style.backgroundColor = "rgba(255, 195, 103, 0)";
+    if(document.getElementsByClassName('faq-answer')[i].style.display != "block") {
+        document.getElementsByClassName('faq')[i].style.backgroundColor = "rgba(255, 195, 103, 0)";
     }
 
 }

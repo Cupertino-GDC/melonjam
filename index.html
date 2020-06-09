@@ -25,12 +25,17 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 	<!-- Bootstrap -->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 	<title>MelonJam</title>
 
@@ -39,14 +44,37 @@
 <body style="background-color: rgb(197, 239, 246)">
 
 	<div id="header-div" >
-		<nav id="navbar">
-			<a href="#" onclick="scrollToTop()"><img src="images/melon_noText.png" alt="test" id="navbar-logo"></a>
-			<a class="navbutton" href="#about" onclick="scrollToElement('about-div')">About</a>
-			<a class="navbutton" href="#sponsors" onclick="scrollToElement('sponsors-div')">Sponsors</a>
-			<a class="navbutton" href="#FAQ" onclick="scrollToElement('faq-div')" style="margin-right: 50px;">FAQ</a>
+		<nav class="navbar navbar-expand-md bg-transparent navbar-light">
+		  <a class="navbar-brand" href="#" onclick="scrollToTop()">
+			  <img src="images/melon_noText.png" alt="test" id="navbar-logo">
+		  </a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse navbar-toggleable-sm" id="collapsibleNavbar">
+		    <ul class="navbar-nav">
+		      <li class="nav-item">
+		        <a class="navbutton" href="#about" onclick="scrollToElement('about-div')">About</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="navbutton" href="#schedule" onclick="scrollToElement('schedule-div')">Schedule</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="navbutton" href="#sponsors" onclick="scrollToElement('sponsors-div')">Sponsors</a>
+		      </li>
+			  <li class="nav-item">
+		        <a class="navbutton" href="#team" onclick="scrollToElement('team-div')">Team</a>
+		      </li>
+			  <li class="nav-item">
+		        <a class="navbutton" href="#FAQ" onclick="scrollToElement('faq-div')">FAQ</a>
+		      </li>
+		    </ul>
+		  </div>
 		</nav>
 
 		<img src="images/melon.png" alt="MelonJam" id="header-logo" onclick="scrollToTop()">
+
+		<h1 id="dates"><span style="color: rgb(73, 228, 34);">July 15th</span> <span style="color: rgb(213, 176, 148);">to</span> <span style="color: rgb(255, 195, 103);">July 17th</span></h1>
 
 		<br><br>
 
@@ -59,14 +87,24 @@
 	<div id="about-div">
 		<br><br>
 		<h1 style="font-size: 42px; font-weight: 600;">About MelonJam:</h1>
-		<h1 style="width: 75vw; margin: auto; line-height: 1.75; font-weight: 400; font-size: 32px; font-family: 'Poppins', sans-serif;">
-			MelonJam is a rather epic jam. However, its epicness is nothing in comparision to the
-			Cupertino Game Development Club (GDC). Led by president Mr. Ryan Lee, GDC has made a
-			name for itself throughout Cupertino High School. Mr. Ted McLeod, the club's advisor and an
-			extremely well-respected Computer Science teacher, speaks highly of the GDC, placing it
-			#3 in his greatest achievements of all time.
+		<h1 style="width: 80vw; margin: auto; line-height: 1.75; font-weight: 400; font-size: 30px; font-family: 'Poppins', sans-serif;">
+			MelonJam is a game jam; it is an event where people get together and make small games, normally in a short time span. It can be worrying to take on enormous, time-consuming projects like full games, and it can be difficult to brainstorm new ideas. Game jams intend to do away with these problems so that game developers can focus on generating and prototyping new ideas.
+			<br><br>
+			<span id="about-more-text">
+				MelonJam was created by the Cupertino Game Development Club with the intent of bridging the gap between high schoolers with a game development interest and experienced game developers. We offer a chance for students interested in game development to try their hand at making a small game while encouraging them to improve their skills so that they can make something big in the future. True to the purpose of a game jam, MelonJam also gives developers a chance to have fun brainstorming and developing a game, irrespective of experience.
+				<br><br>
+			</span>
 		</h1>
+		<a id="read-more-button" onclick="readMore()">Read more</a>
+		<br><br><br><br>
+	</div>
+
+	<div id="schedule-div">
 		<br>
+		<h1 style="font-size: 42px; font-weight: 600;">Schedule (PST):</h1>
+		<br>
+		<h1 style="font-weight: 400; font-size: 36px; font-family: 'Poppins', sans-serif; line-height: 2;"><i>July 15th, 8:00 AM:</i> Theme Announced<br><i>July 17th, 6:00 PM:</i> MelonJam Ends</h1>
+		<br><br><br>
 	</div>
 
 	<div id="sponsors-div">
@@ -82,6 +120,14 @@
 		<div class="sponsor">Sponsor 5</div>
 		<div class="sponsor">Sponsor 6</div>
 
+		<br>
+	</div>
+
+	<div id="team-div">
+		<br>
+		<h1 style="font-size: 42px; font-weight: 600;">Team - Board of Directors:</h1>
+		<h1 style="font-weight: 400; font-size: 30px; font-family: 'Poppins', sans-serif; line-height: 1.75;">President: Ryan Lee<br>VP: Pranav Harakere<br>Secretary: Manu Bhat<br>Treasurer: Nishant Ray<br>Public Relations: Shreyas Nalandigal</h1>
+		<br><br>
 	</div>
 
 	<div id="faq-div">
@@ -89,73 +135,57 @@
 		<h1 style="font-size: 42px; font-weight: 600; font-family: 'Century Gothic', sans-serif;">Frequently Asked Questions:</h1>
 		<br>
 
-		<div class="faq" onclick="expandFAQ(0)" onmouseover="enterHoverFAQ(this)" onmouseout="exitHoverFAQ(this)">
-			<h1 style="font-weight: 500;">What is MelonJam?</h1>
+		<div class="faq" onclick="expandFAQ(0)" onmouseover="enterHoverFAQ(0)" onmouseout="exitHoverFAQ(0)">
+			<h1 style="font-weight: 500;">What's a game jam?</h1>
 			<p class="faq-answer">
-				MelonJam is a rather epic jam. However, its epicness is nothing in comparision to the
-				Cupertino Game Development Club (GDC). Led by president Mr. Ryan Lee, GDC has made a
-				name for itself throughout Cupertino High School. Mr. Ted McLeod, the club's advisor and an
-				extremely well-respected Computer Science teacher, speaks highly of the GDC, placing it
-				#3 in his greatest achievements of all time.
+				<br>
+				A game jam is a lot like a hackathon for games. People develop games using any tools that they have, then submit them by a due date. As with hackathons, people are free to use any resources that are available to them to develop their game: their game engine of choice, their digital art program of choice, youtube coding tutorials, books on art, anything. You can even use human resources—you can team up with others to make your game better.
+				<br><br>
+				Most game jams, as does Melon Jam, also have a theme. Some jams prefer or require that you stick to the theme; others don’t, and only intend for the theme to be a tool to kickstart your brainstorming. To make the jam more challenging and to enforce creativity via restriction, MelonJam requires that you connect your game to the theme in some way.
+				<br><br>
 			</p>
 		</div>
 
-		<div class="faq" onclick="expandFAQ(1)" onmouseover="enterHoverFAQ(this)" onmouseout="exitHoverFAQ(this)">
-			<h1 style="font-weight: 500;">Who is MelonJam?</h1>
+		<div class="faq" onclick="expandFAQ(1)" onmouseover="enterHoverFAQ(1)" onmouseout="exitHoverFAQ(1)">
+			<h1 style="font-weight: 500;">How do you ensure that the only high schoolers will receive the novice prize?</h1>
 			<p class="faq-answer">
-				MelonJam is a rather epic jam. However, its epicness is nothing in comparision to the
-				Cupertino Game Development Club (GDC). Led by president Mr. Ryan Lee, GDC has made a
-				name for itself throughout Cupertino High School. Mr. Ted McLeod, the club's advisor and an
-				extremely well-respected Computer Science teacher, speaks highly of the GDC, placing it
-				#3 in his greatest achievements of all time.
+				<br>
+				At present, distance learning has forced most schools to make use of distance learning; even before that, schools have been utilizing technology to aid students in education. We are therefore relatively confident that you are affiliated in some way with a learning management system. In the sign up form, we will request some of the information associated with that account—only as much as is appropriate to confirm your identity, and no more. Once you sign up, we will use the information given to us to determine whether you are a high school student or younger. If you cannot do so, you still have the chance to compete for the advanced prize.
+				<br><br>
 			</p>
 		</div>
 
-		<div class="faq" onclick="expandFAQ(2)" onmouseover="enterHoverFAQ(this)" onmouseout="exitHoverFAQ(this)">
-			<h1 style="font-weight: 500;">Why is MelonJam?</h1>
+		<div class="faq" onclick="expandFAQ(2)" onmouseover="enterHoverFAQ(2)" onmouseout="exitHoverFAQ(2)">
+			<h1 style="font-weight: 500;">Do I have to follow the theme?</h1>
 			<p class="faq-answer">
-				MelonJam is a rather epic jam. However, its epicness is nothing in comparision to the
-				Cupertino Game Development Club (GDC). Led by president Mr. Ryan Lee, GDC has made a
-				name for itself throughout Cupertino High School. Mr. Ted McLeod, the club's advisor and an
-				extremely well-respected Computer Science teacher, speaks highly of the GDC, placing it
-				#3 in his greatest achievements of all time.
+				<br>
+				Yes; to be eligible for a prize, your game must have some aspect that fits the theme in some way. This is because we want to make the jam more challenging as well as enforce creativity through restriction.
+				<br><br>
 			</p>
 		</div>
 
 		<br>
 
-		<div class="faq" onclick="expandFAQ(3)" onmouseover="enterHoverFAQ(this)" onmouseout="exitHoverFAQ(this)">
-			<h1 style="font-weight: 500;">Where is MelonJam?</h1>
+		<div class="faq" onclick="expandFAQ(3)" onmouseover="enterHoverFAQ(3)" onmouseout="exitHoverFAQ(3)">
+			<h1 style="font-weight: 500;">I’m not a high schooler; I’m younger/older than one. Can I still join? </h1>
 			<p class="faq-answer">
-				MelonJam is a rather epic jam. However, its epicness is nothing in comparision to the
-				Cupertino Game Development Club (GDC). Led by president Mr. Ryan Lee, GDC has made a
-				name for itself throughout Cupertino High School. Mr. Ted McLeod, the club's advisor and an
-				extremely well-respected Computer Science teacher, speaks highly of the GDC, placing it
-				#3 in his greatest achievements of all time.
+				<br>
+				Yes; we do not intend to restrict anyone from participating in MelonJam. While we do target pre-collegiate students in particular, we believe that there is much to gain from having people from all sorts of backgrounds share their games and ideas with others.
+				<br><br>
+				That said, you must be able to guarantee that you are a high school student or under to be eligible for the novice prize. If you cannot, you still have the chance to win the advanced prize.
+				<br><br>
 			</p>
 		</div>
 
-		<div class="faq" onclick="expandFAQ(4)" onmouseover="enterHoverFAQ(this)" onmouseout="exitHoverFAQ(this)">
-			<h1 style="font-weight: 500;">When is MelonJam?</h1>
+		<div class="faq" onclick="expandFAQ(4)" onmouseover="enterHoverFAQ(4)" onmouseout="exitHoverFAQ(4)">
+			<h1 style="font-weight: 500;">I’d like to work as a team. Can I?</h1>
 			<p class="faq-answer">
-				MelonJam is a rather epic jam. However, its epicness is nothing in comparision to the
-				Cupertino Game Development Club (GDC). Led by president Mr. Ryan Lee, GDC has made a
-				name for itself throughout Cupertino High School. Mr. Ted McLeod, the club's advisor and an
-				extremely well-respected Computer Science teacher, speaks highly of the GDC, placing it
-				#3 in his greatest achievements of all time.
+				<br>
+				Yes, you may.  However, if a member of your team cannot confirm that they are a high school student or younger, then your entire team will be ineligible for the novice prize. This is to prevent piggybacking, where one experienced team member takes care of the work for others.
+				<br><br>
 			</p>
 		</div>
 
-		<div class="faq" onclick="expandFAQ(5)" onmouseover="enterHoverFAQ(this)" onmouseout="exitHoverFAQ(this)">
-			<h1 style="font-weight: 500;">How is MelonJam?</h1>
-			<p class="faq-answer">
-				MelonJam is a rather epic jam. However, its epicness is nothing in comparision to the
-				Cupertino Game Development Club (GDC). Led by president Mr. Ryan Lee, GDC has made a
-				name for itself throughout Cupertino High School. Mr. Ted McLeod, the club's advisor and an
-				extremely well-respected Computer Science teacher, speaks highly of the GDC, placing it
-				#3 in his greatest achievements of all time.
-			</p>
-		</div>
 		<br><br>
 	</div>
 

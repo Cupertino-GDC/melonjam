@@ -30,14 +30,9 @@ body, html {
 }
 
 #header-div {
+    margin-top: 10px;
     width: 100%;
     text-align: center;
-}
-
-#navbar {
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 35px;
 }
 
 #navbar-logo {
@@ -67,7 +62,6 @@ body, html {
 }
 
 .navbutton:hover {
-    padding: 12px 24px;
     border-bottom: none;
     border-radius: 50px;
     text-decoration: none;
@@ -78,14 +72,19 @@ body, html {
 
 #header-logo {
     cursor: pointer;
-    width: 475px;
-    height: 475px;
+    width: 450px;
+    height: 450px;
     text-align: center;
     transition: all 0.5s;
 }
 
 #header-logo:hover {
     transform: scale(1.05);
+}
+
+#dates {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 #join-button {
@@ -95,7 +94,7 @@ body, html {
     border: 2px solid rgb(213, 176, 148);
     background-color: rgb(213, 176, 148);
     padding: 12px 48px;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: all 0.5s;
     font-family: 'Century Gothic', sans-serif;
 }
@@ -113,6 +112,33 @@ body, html {
     width: 100%;
     text-align: center;
     background-color: white;
+    font-weight: 700;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+#about-more-text {
+    display: none;
+}
+
+#read-more-button {
+    background-color: rgba(255, 195, 103, 1.0);
+    cursor: pointer;
+    font-size: 30px;
+    border: 3px solid rgb(255, 195, 103);
+    border-radius: 10px;
+    padding: 12px 48px;
+    transition: all 0.5s;
+}
+
+#read-more-button:hover {
+    background-color: rgba(255, 195, 103, 1.0);
+    border-radius: 25px;
+    padding: 12px 64px;
+}
+
+#schedule-div {
+    width: 100%;
+    text-align: center;
     font-weight: 700;
     font-family: 'Century Gothic', sans-serif;
 }
@@ -144,14 +170,21 @@ body, html {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
+#team-div {
+    width: 100%;
+    font-family: 'Century Gothic', sans-serif;
+    text-align: center;
+}
+
 #faq-div {
     width: 100%;
     text-align: center;
+    background-color: white;
 }
 
 .faq {
     font-family: 'Poppins', sans-serif;
-    width: 450px;
+    width: 75vw;
     display: inline-block;
     margin: 20px;
     padding: 24px 36px;
@@ -167,6 +200,7 @@ body, html {
 .faq-answer {
     font-family: 'Poppins', sans-serif;
     display: none;
+    font-size: 24px;
 }
 
 #footer {
@@ -178,6 +212,27 @@ body, html {
     font-family: 'Century Gothic', sans-serif;
 }
 
+@media screen and (max-width: 1100px) {
+    .navbutton {
+        font-size: 20px;
+        padding: 12px 18px;
+        border-bottom: solid 2px rgb(73, 228, 34);
+    }
+
+    #navbar-logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbutton {
+        font-size: 28px;
+        padding: 12px 96px;
+        border-bottom: solid 3px rgb(73, 228, 34);
+        margin-bottom: 20px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .faq {
         width: 90vw;
@@ -185,16 +240,8 @@ body, html {
 }
 
 @media screen and (max-width: 730px) {
-    #navbar {
-        text-align: center;
-    }
-
     #navbar-logo {
         display: none;
-    }
-
-    .navbutton {
-        margin-top: 10px;
     }
 }
 
