@@ -124,14 +124,15 @@ body, html {
     background-color: rgba(255, 195, 103, 1.0);
     cursor: pointer;
     font-size: 30px;
-    border: 3px solid rgb(255, 195, 103);
+    /* border: 3px solid rgb(255, 195, 103); */
     border-radius: 10px;
     padding: 12px 48px;
     transition: all 0.5s;
 }
 
 #read-more-button:hover {
-    background-color: rgba(255, 195, 103, 1.0);
+    color: white;
+    background-color: rgba(247, 144, 64, 1.0);
     border-radius: 25px;
     padding: 12px 64px;
 }
