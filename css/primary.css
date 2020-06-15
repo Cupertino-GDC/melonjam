@@ -20,13 +20,13 @@ body, html {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(73, 228, 34);
+    background: rgb(127, 209, 134);
     border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(66, 205, 31);
+    background: rgb(95, 157, 101);
 }
 
 #header-div {
@@ -49,14 +49,14 @@ body, html {
 .navbutton {
     display: inline-block;
     font-size: 32px;
-    color: rgb(73, 228, 34);
+    color: rgb(127, 209, 134);
     font-weight: 700;
     padding: 12px 24px;
     padding-bottom: 12px;
     border-radius: 0px;
     text-decoration: none;
     position: relative;
-    border-bottom: solid 3px rgb(73, 228, 34);
+    border-bottom: solid 3px rgb(127, 209, 134);
     margin-right: 50px;
     transition: all 0.7s;
 }
@@ -67,7 +67,7 @@ body, html {
     text-decoration: none;
     text-decoration-color: white;
     color: white;
-    background-color: rgb(73, 228, 34);
+    background-color: rgb(127, 209, 134);
 }
 
 #header-logo {
@@ -151,7 +151,7 @@ body, html {
 }
 
 .sponsor {
-    background-color: rgb(73, 228, 34);
+    background-color: rgb(127, 209, 134);
     width: 250px;
     height: 250px;
     display: inline-block;
@@ -208,7 +208,7 @@ body, html {
     background-color: rgb(100, 100, 100);
     height: 200px;
     text-align: center;
-    color: rgb(73, 228, 34);
+    color: rgb(127, 209, 134);
     font-family: 'Century Gothic', sans-serif;
 }
 
@@ -216,7 +216,7 @@ body, html {
     .navbutton {
         font-size: 20px;
         padding: 12px 18px;
-        border-bottom: solid 2px rgb(73, 228, 34);
+        border-bottom: solid 2px rgb(127, 209, 134);
     }
 
     #navbar-logo {
@@ -228,7 +228,7 @@ body, html {
     .navbutton {
         font-size: 28px;
         padding: 12px 96px;
-        border-bottom: solid 3px rgb(73, 228, 34);
+        border-bottom: solid 3px rgb(127, 209, 134);
         margin-bottom: 20px;
     }
 }
