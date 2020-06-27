@@ -125,7 +125,7 @@ body, html {
     background-color: rgba(255, 195, 103, 1.0);
     cursor: pointer;
     font-size: 30px;
-    /* border: 3px solid rgb(255, 195, 103); */
+    color: white;
     border-radius: 10px;
     padding: 12px 48px;
     transition: all 0.5s;
@@ -173,8 +173,27 @@ body, html {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
+#prospectus-button {
+    background-color: rgba(255, 195, 103, 1.0);
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+    padding: 12px 48px;
+    transition: all 0.5s;
+}
+
+#prospectus-button:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(247, 144, 64, 1.0);
+    border-radius: 25px;
+    padding: 12px 64px;
+}
+
 #team-div {
-    background: linear-gradient(223deg, rgba(2,0,36,1) 0%, rgba(188,255,229,1) 0%, rgba(197,239,246,1) 61%);
+    background: linear-gradient(313deg/* 223deg */, rgba(2,0,36,1) 0%, rgba(188,255,229,1) 0%, rgba(197,239,246,1) 61%);
     width: 100%;
     font-family: 'Century Gothic', sans-serif;
     text-align: center;
