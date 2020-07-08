@@ -154,23 +154,17 @@ body, html {
 }
 
 .sponsor {
-    background-color: rgb(127, 209, 134);
     width: 250px;
     height: 250px;
     display: inline-block;
     border-radius: 20px;
-    line-height: 750%;
     margin: 50px;
     cursor: pointer;
     transition: all 0.5s;
-    font-weight: 500;
-    font-size: 32px;
-    font-family: 'Poppins', sans-serif;
 }
 
 .sponsor:hover {
-    transform: translate(0px, -5px);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    transform: translate(0px, -5px) scale(1.05);
 }
 
 #prospectus-button {
@@ -272,5 +266,22 @@ body, html {
     #header-logo {
         width: 95vw;
         height: 95vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #prospectus-button {
+        background-color: rgba(255, 195, 103, 1.0);
+        cursor: pointer;
+        font-size: 6.5vw;
+        font-weight: 600;
+        color: white;
+        border-radius: 10px;
+        padding: 6px 24px;
+        transition: all 0.5s;
+    }
+
+    #prospectus-button:hover {
+        padding: 6px 24px;
     }
 }
