@@ -154,17 +154,30 @@ body, html {
 }
 
 .sponsor {
-    width: 250px;
-    height: 250px;
     display: inline-block;
-    border-radius: 20px;
     margin: 50px;
     cursor: pointer;
     transition: all 0.5s;
 }
 
 .sponsor:hover {
-    transform: translate(0px, -5px) scale(1.05);
+    transform: scale(1.05);
+}
+
+.hackclub {
+    transform: scale(2);
+}
+
+.hackclub:hover {
+    transform: scale(2.05);
+}
+
+.hyperx {
+    transform: translate(0px, 15px);
+}
+
+.hyperx:hover {
+    transform: translate(0px, 15px) scale(1.05);
 }
 
 #prospectus-button {
