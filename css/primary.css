@@ -236,7 +236,7 @@ body, html {
 #footer {
     width: 100%;
     background-color: rgb(100, 100, 100);
-    height: 275px; /* auto */
+    height: 275px;
     text-align: center;
     color: rgb(127, 209, 134);
     font-family: 'Century Gothic', sans-serif;
