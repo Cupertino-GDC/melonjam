@@ -137,9 +137,77 @@
 #schedule-div {
     background: linear-gradient(313deg, rgba(2,0,36,1) 0%, rgba(188,255,229,1) 0%, rgba(197,239,246,1) 61%);
     width: 100%;
+    height: 900px;
     text-align: center;
     font-weight: 700;
     font-family: 'Century Gothic', sans-serif;
+}
+
+#days {
+    margin-top: 115px;
+    width: 20%;
+    float: left;
+    text-align: right;
+}
+
+.day-text {
+    font-weight: 700;
+    padding-right: 20px;
+}
+
+#timings {
+    white-space: nowrap;
+    float: left;
+    width: 80%;
+    margin-top: 50px;
+    overflow-x: scroll;
+}
+
+.time-column {
+    text-align: left;
+    position: relative;
+    width: 325px; /* 26.66% */
+    display: inline-block;
+    vertical-align: top;
+    margin: auto;
+    border-left: 1px solid black;
+}
+
+.time-text {
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+.event {
+    color: white;
+    background-color: rgb(127, 209, 134);
+    width: 95%;
+    height: 130px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    padding: 15px 0px 0px 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 0px solid black;
+    transition: all 0.2s;
+}
+
+.event:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(124, 194, 130);
+}
+
+.placeholder {
+    visibility: hidden;
+}
+
+.special {
+    background-color: rgb(255, 195, 103);
+}
+
+.special:hover {
+    background-color: rgb(245, 175, 71);
 }
 
 #sponsors-div {
@@ -217,10 +285,6 @@
     cursor: pointer;
     border-radius: 20px;
     transition: all 0.3s;
-}
-
-.faq:hover {
-    /* background-color: rgba(255, 195, 103, 0.5); */
 }
 
 .faq-answer {
