@@ -77,6 +77,7 @@
 
 #header-logo:hover {
     transform: scale(1.05);
+    /* filter: drop-shadow(5px 5px 5px rgba(255, 195, 103, 0.625)); */
 }
 
 #dates {
