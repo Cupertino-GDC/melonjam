@@ -189,8 +189,7 @@
     border-radius: 10px;
     padding: 15px 0px 0px 15px;
     cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border: 0px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     transition: all 0.2s;
 }
 
@@ -209,6 +208,43 @@
 
 .special:hover {
     background-color: rgb(245, 175, 71);
+}
+
+.event-modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding: 20px; /* Location of the box */
+    width: 400px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: white;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.25);
+}
+
+.icon {
+    transform: scale(1.5);
 }
 
 #sponsors-div {

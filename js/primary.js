@@ -20,6 +20,28 @@ function readMore() {
     }
 }
 
+function clearModals() {
+    var modals = [];
+    modals.push(document.getElementById('start-modal'));
+    modals.push(document.getElementById('echoAR-modal'));
+    modals.push(document.getElementById('end-modal'));
+
+    for(var i = 0; i < modals.length; i++) {
+        modals[i].style.display = "none";
+    }
+}
+
+function openModal(modalName) {
+    clearModals();
+    var modal = document.getElementById(modalName);
+    modal.style.display = "block";
+}
+
+function closeModal(modalName) {
+    var modal = document.getElementById(modalName);
+    modal.style.display = "none";
+}
+
 function expandFAQ(i) {
     var faq = document.getElementsByClassName('faq')[i];
     var faqText = document.getElementsByClassName('faq-answer')[i];
