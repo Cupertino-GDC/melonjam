@@ -413,14 +413,7 @@
 @media screen and (max-width: 600px) {
     .sponsor {
         margin: 25px 0px;
-    }
-
-    .hackclub {
-        transform: scale(1.75);
-    }
-
-    .hackclub:hover {
-        transform: scale(1.8);
+        max-width: 80vw;
     }
 }
 
@@ -428,14 +421,7 @@
     #header-logo {
         width: 95vw;
         height: 95vw;
-    }
-
-    .hackclub {
-        transform: scale(1.5);
-    }
-
-    .hackclub:hover {
-        transform: scale(1.55);
+        max-width: 50vw;
     }
 }
 
