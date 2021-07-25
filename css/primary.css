@@ -421,7 +421,7 @@
     #header-logo {
         width: 95vw;
         height: 95vw;
-        max-width: 50vw;
+        /* max-width: 50vw; */
     }
 }
 
