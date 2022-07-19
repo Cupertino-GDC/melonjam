@@ -135,28 +135,10 @@
     padding: 12px 64px;
 }
 
-#schedule-extra-button {
-    margin-top: 1050px;
-    background-color: rgba(255, 195, 103, 1.0);
-    cursor: pointer;
-    font-size: 30px;
-    color: white;
-    border-radius: 10px;
-    padding: 12px 48px;
-    transition: all 0.5s;
-}
-
-#schedule-extra-button:hover {
-    background-color: rgba(247, 144, 64, 1.0);
-    border-radius: 25px;
-    padding: 12px 64px;
-    text-decoration: none;
-}
-
 #schedule-div {
     background: linear-gradient(313deg, rgba(2,0,36,1) 0%, rgba(188,255,229,1) 0%, rgba(197,239,246,1) 61%);
     width: 100%;
-    height: 980px;
+    height: 950px;
     text-align: center;
     font-weight: 700;
     font-family: 'Century Gothic', sans-serif;
@@ -283,6 +265,22 @@
 
 .sponsor:hover {
     transform: scale(1.05);
+}
+
+.hackclub {
+    transform: scale(2);
+}
+
+.hackclub:hover {
+    transform: scale(2.05);
+}
+
+.hyperx {
+    transform: translate(0px, 15px);
+}
+
+.hyperx:hover {
+    transform: translate(0px, 15px) scale(1.05);
 }
 
 #prospectus-button {
@@ -441,5 +439,27 @@
 
     #prospectus-button:hover {
         padding: 6px 24px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .hackclub {
+        transform: scale(1.25);
+    }
+
+    .hackclub:hover {
+        transform: scale(1.3);
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .hackclub {
+        transform: scale(1);
+    }
+
+    .hackclub:hover {
+        transform: scale(1.05);
     }
 }
