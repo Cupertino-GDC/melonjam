@@ -69,7 +69,7 @@ body, html {
 		      <li class="nav-item">
 		        <a class="navbutton" href="#about" onclick="scrollToElement('about-div')">About</a>
 		      </li>
-		      <li class="nav-item" style="display: none;">
+		      <li class="nav-item">
 		        <a class="navbutton" href="#schedule" onclick="scrollToElement('schedule-div')">Schedule</a>
 		      </li>
 		      <li class="nav-item">
@@ -147,9 +147,21 @@ body, html {
 				<div class="event placeholder">
 					<h1>placeholder</h1>
 				</div>
-				<div class="event placeholder">
-					<h1>placeholder</h1>
+				<div class="event special" onclick="openModal('start-modal')">
+					<h4 style="color: rgb(100, 100, 100);">12:00 AM</h4>
+					<h3>Game Jamming<br>Starts!</h3>
 				</div>
+				<div id="start-modal" class="event-modal">
+			    	<span class="close" onclick="closeModal('start-modal')">&times</span>
+			    	<h3 style="font-weight: 700">Game Jamming Begins!</h3>
+					<div style="margin-top: 15px; padding-left: 5px;">
+						<i class="icon fa fa-clock-o"></i>
+						<h4 style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;">7/24, 12:00 AM</h4>
+						<br>
+						<i class="icon fa fa-external-link"></i>
+						<h4 style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;"><a href="https://melon-jam.devpost.com">Devpost</a></h4>
+					</div>
+				</div><!--modals are not currently in use-->
 				<div class="event placeholder">
 					<h1>placeholder</h1>
 				</div>
@@ -273,21 +285,6 @@ body, html {
 				<div class="event placeholder">
 					<h1>placeholder</h1>
 				</div>
-				<div class="event special" onclick="openModal('start-modal')">
-					<h4 style="color: rgb(100, 100, 100);">11:59 PM</h4>
-					<h3>Game Jamming<br>Starts!</h3>
-				</div>
-				<div id="start-modal" class="event-modal">
-			    	<span class="close" onclick="closeModal('start-modal')">&times</span>
-			    	<h3 style="font-weight: 700">Game Jamming Begins!</h3>
-					<div style="margin-top: 15px; padding-left: 5px;">
-						<i class="icon fa fa-clock-o"></i>
-						<h4 style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;">7/23, 11:59 PM</h4>
-						<br>
-						<i class="icon fa fa-external-link"></i>
-						<h4 style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;"><a href="https://melon-jam.devpost.com">Devpost</a></h4>
-					</div>
-				</div><!--modals are not currently in use-->
 				<div class="event placeholder">
 					<h1>placeholder</h1>
 				</div>
@@ -306,10 +303,14 @@ body, html {
 					<h4 style="color: rgb(100, 100, 100);">11:59 PM</h4>
 					<h3>Game Jamming<br>Ends</h3>
 				</div>
+				<div class="event placeholder">
+					<h1>placeholder</h1>
+				</div>
 				<br>
 			</div>
 		</div>
 
+		<a id="schedule-extra-button" href="https://docs.google.com/document/u/2/d/e/2PACX-1vS5exbYTrnrH4fh5Hk76hvXFWTLVsvRpTIGnIp1Lgep0XXe35ehi75WpvubAvUf_Ws_qDwAy9gmnwWi/pub">View recommended schedule</a>
 	</div>
 
 	<div id="sponsors-div">
@@ -322,13 +323,19 @@ body, html {
 
 		<img src="images/MelonJam 3/sponsors/aops.png" alt="AoPS" class="sponsor" width="471" height="165" onclick="window.open('https://artofproblemsolving.com/company')">
 
-		<img src="images/MelonJam 3/sponsors/houdini.png" alt="Houdini" class="sponsor" width="728" height="124" onclick="window.open('https://www.sidefx.com/')">
-
-		<br>
-
-		<img src="images/MelonJam 3/sponsors/leading_learners.png" alt="Leading Learners" class="sponsor" width="800" height="200" onclick="window.open('https://www.leadlearners.ca/')">
-
 		<img src="images/MelonJam 3/sponsors/taskade.png" alt="Taskade" class="sponsor" width="384" height="96" onclick="window.open('https://taskade.com/')">
+		
+		<br>
+		
+		<img src="images/MelonJam 3/sponsors/houdini.png" alt="Houdini" class="sponsor" width="728" height="124" onclick="window.open('https://www.sidefx.com/')">
+		
+		<img src="images/MelonJam 3/sponsors/interviewcake.png" alt="AoPS" class="sponsor" width="876" height="150" onclick="window.open('https://www.interviewcake.com/')">		
+		
+		<br>
+		
+		<img src="images/MelonJam 3/sponsors/leading_learners.png" alt="Leading Learners" class="sponsor" width="800" height="200" onclick="window.open('https://www.leadlearners.ca/')">
+		
+		<img src="images/MelonJam 3/sponsors/1password.png" alt="Wolfram Language" class="sponsor" width="666" height="134" onclick="window.open('https://1password.com/')">
 
 		<img src="images/MelonJam 3/sponsors/wolfram-language.png" alt="Wolfram Language" class="sponsor" width="728" height="124" onclick="window.open('https://www.wolfram.com/language')">
 
