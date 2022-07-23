@@ -21,10 +21,7 @@ function readMore() {
 }
 
 function clearModals() {
-    var modals = [];
-    modals.push(document.getElementById('start-modal'));
-    modals.push(document.getElementById('echoAR-modal'));
-    modals.push(document.getElementById('end-modal'));
+    var modals = document.getElementsByClassName('event-modal');
 
     for(var i = 0; i < modals.length; i++) {
         modals[i].style.display = "none";

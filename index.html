@@ -156,12 +156,12 @@ body, html {
 			    	<h3 style="font-weight: 700">Game Jamming Begins!</h3>
 					<div style="margin-top: 15px; padding-left: 5px;">
 						<i class="icon fa fa-clock-o"></i>
-						<h4 style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;">7/24, 12:00 AM</h4>
+						<h4 style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;">7/23, 12:00 AM</h4>
 						<br>
 						<i class="icon fa fa-external-link"></i>
-						<h4 style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;"><a href="https://melon-jam.devpost.com">Devpost</a></h4>
+						<h4 style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;"><a href="https://melon-jam-3.devpost.com/">Devpost</a></h4>
 					</div>
-				</div><!--modals are not currently in use-->
+				</div>
 				<div class="event placeholder">
 					<h1>placeholder</h1>
 				</div>
@@ -214,7 +214,7 @@ body, html {
 			</div>
 
 			<div class="time-column">
-				<h1 class="time-text">2:00 PM</h1>
+				<h1 class="time-text">5:00 PM</h1>
 				<br>
 				<div class="event placeholder">
 					<h1>placeholder</h1>
@@ -222,29 +222,17 @@ body, html {
 				<div class="event placeholder">
 					<h1>placeholder</h1>
 				</div>
-				<div class="event placeholder">
-					<h1>placeholder</h1>
+				<div class="event special" onclick="openModal('speaker-modal')">
+					<h4 style="color: rgb(100, 100, 100);">5:00 PM</h4>
+					<h3>Speaker:<br>Dani Wright</h3>
 				</div>
-				<div class="event placeholder">
-					<h1>placeholder</h1>
-				</div>
-				<div class="event placeholder">
-					<h1>placeholder</h1>
-				</div>
-				<br>
-			</div>
-
-			<div class="time-column">
-				<h1 class="time-text">4:00 PM</h1>
-				<br>
-				<div class="event placeholder">
-					<h1>placeholder</h1>
-				</div>
-				<div class="event placeholder">
-					<h1>placeholder</h1>
-				</div>
-				<div class="event placeholder">
-					<h1>placeholder</h1>
+				<div id="speaker-modal" class="event-modal" style="margin-top: 15px">
+			    	<span class="close" onclick="closeModal('speaker-modal')">&times</span>
+			    	<h3 style="font-weight: 700">Making Queer Games</h3>
+					<div style="margin-top: 15px; padding-left: 5px;">
+						<i class="icon fa fa-clock-o"></i>
+						<h4 style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;">7/23, 5:00 PM</h4>
+					</div>
 				</div>
 				<div class="event placeholder">
 					<h1>placeholder</h1>
@@ -288,20 +276,20 @@ body, html {
 				<div class="event placeholder">
 					<h1>placeholder</h1>
 				</div>
-				<div id="end-modal" class="event-modal" style="margin-top: -45px">
+				<div class="event special" onclick="openModal('end-modal')">
+					<h4 style="color: rgb(100, 100, 100);">11:59 PM</h4>
+					<h3>Game Jamming<br>Ends</h3>
+				</div>
+				<div id="end-modal" class="event-modal" style="margin-top: 15px">
 			    	<span class="close" onclick="closeModal('end-modal')">&times</span>
 			    	<h3 style="font-weight: 700">Game Jamming Ends!</h3>
 					<div style="margin-top: 15px; padding-left: 5px;">
 						<i class="icon fa fa-clock-o"></i>
-						<h4 style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;">7/25, 11:59 PM</h4>
+						<h4 style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;">7/24, 11:59 PM</h4>
 						<br>
 						<i class="icon fa fa-external-link"></i>
-						<h4 style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;"><a href="https://melon-jam.devpost.com">Devpost</a></h4>
+						<h4 style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;"><a href="https://melon-jam-3.devpost.com/">Devpost</a></h4>
 					</div>
-				</div>
-				<div class="event special" onclick="openModal('end-modal')">
-					<h4 style="color: rgb(100, 100, 100);">11:59 PM</h4>
-					<h3>Game Jamming<br>Ends</h3>
 				</div>
 				<div class="event placeholder">
 					<h1>placeholder</h1>
