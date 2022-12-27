@@ -276,7 +276,6 @@
     display: inline-block;
     margin: 25px 50px;
     max-width: 90%;
-    height: auto;
     cursor: pointer;
     transition: all 0.5s;
 }
