@@ -74,3 +74,50 @@ function exitHoverFAQ(i) {
     }
 
 }
+
+// len: length of time units in terms of milliseconds
+// convert: function to convert 'count' # of this unit to a string
+const units = {
+    ms: {len: 1, convert: function(count) {
+        return count + " ms";
+    }},
+    sec: {len: 1000, convert: function(count) {
+        return count + " Second" + (count == 1 ? "" : "s");
+    }},
+    min: {len: 60*1000, convert: function(count) {
+        return count + " Minute" + (count == 1 ? "" : "s");
+    }},
+    hr: {len: 60*60*1000, convert: function(count) {
+        return count + " Hour" + (count == 1 ? "" : "s");
+    }},
+    day: {len: 24*60*60*1000, convert: function(count) {
+        return count + " Day" + (count == 1 ? "" : "s");
+    }},
+    week: {len: 7*24*60*60*1000, convert: function(count) {
+        return count + " Week" + (count == 1 ? "" : "s");
+    }}
+}
+function convertTimeToText(time, options = {roundUp: true, display: ["sec","min","hr","day"]}) {
+    var results = []; 
+    
+    // ascending order in terms of ms length
+    options.display.sort((a, b) => { return units[a].len - units[b].len });
+
+    for (var i = options.display.length - 1; i >= 0; i--) {
+        var unit = units[options.display[i]];
+        var remainder = time % unit.len;
+        var count = Math.max((time - remainder) / unit.len, 0);
+        if (options.roundUp && i == 0 && remainder > 0) {
+            count++;
+        }
+        time = remainder;
+        results.push(unit.convert(count));
+    }
+    return results.join(", ");
+}
+
+setInterval(function() {
+    for (var element of document.getElementsByClassName("timer")) {
+        element.innerHTML = convertTimeToText(element.getAttribute("time") - new Date().getTime());
+    }
+}, 1000);
