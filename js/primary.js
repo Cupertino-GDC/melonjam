@@ -97,7 +97,7 @@ const units = {
         return count + " Week" + (count == 1 ? "" : "s");
     }}
 }
-function convertTimeToText(time, options = {roundUp: true, display: ["sec","min","hr","day"]}) {
+function convertTimeToText(time, options = {roundUp: false, display: ["sec","min","hr","day"]}) {
     var results = []; 
     
     // ascending order in terms of ms length
