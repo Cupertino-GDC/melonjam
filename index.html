@@ -110,7 +110,7 @@ body, html {
 	</div>
 
 	<!-- hidden for now -->
-	<div id="schedule-div" style="display: none">
+	<div id="schedule-div">
 		<br>
 		<h1 style="font-size: 42px; font-weight: 600;">Schedule (UTC):</h1>
 		<!-- <br>
@@ -140,8 +140,20 @@ body, html {
 			<div class="time-column">
 				<h1 class="time-text">12:00 AM</h1>
 				<br>
-				<div class="event placeholder">
-					<h1>placeholder</h1>
+				<div class="event special" onclick="openModal('start-modal')">
+					<h4 style="color: rgb(100, 100, 100);">12:00 AM</h4>
+					<h3>Game Jamming<br>Starts!</h3>
+				</div>
+				<div id="start-modal" class="event-modal">
+			    	<span class="close" onclick="closeModal('start-modal')">&times</span>
+			    	<h3 style="font-weight: 700">Game Jamming Begins!</h3>
+					<div style="margin-top: 15px; padding-left: 5px;">
+						<i class="icon fa fa-clock-o"></i>
+						<h4 style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;">7/23, 12:00 AM</h4>
+						<br>
+						<i class="icon fa fa-external-link"></i>
+						<h4 style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;"><a href="https://melon-jam-3.devpost.com/">Devpost</a></h4>
+					</div>
 				</div>
 				<div class="event placeholder">
 					<h1>placeholder</h1>
@@ -251,9 +263,6 @@ body, html {
 				<div class="event placeholder">
 					<h1>placeholder</h1>
 				</div>
-				<div class="event placeholder">
-					<h1>placeholder</h1>
-				</div>
 				<div class="event special" onclick="openModal('end-modal')">
 					<h4 style="color: rgb(100, 100, 100);">11:59 PM</h4>
 					<h3>Game Jamming<br>Ends</h3>
@@ -272,11 +281,14 @@ body, html {
 				<div class="event placeholder">
 					<h1>placeholder</h1>
 				</div>
+				<div class="event placeholder">
+					<h1>placeholder</h1>
+				</div>
 				<br>
 			</div>
 		</div>
 
-		<a id="schedule-extra-button" href="https://docs.google.com/document/u/2/d/e/2PACX-1vS5exbYTrnrH4fh5Hk76hvXFWTLVsvRpTIGnIp1Lgep0XXe35ehi75WpvubAvUf_Ws_qDwAy9gmnwWi/pub">View recommended schedule</a>
+		<a id="schedule-extra-button" href="https://docs.google.com/document/d/e/2PACX-1vTiIDMz_FLWM-II-eNREgKXKWJWt0DzXrALLHUT91txx8PkkzR3udskTYb6exy9FwD1CJ2N05s0YTfB/pub">View recommended schedule</a>
 	</div>
 
 	<div id="sponsors-div">
