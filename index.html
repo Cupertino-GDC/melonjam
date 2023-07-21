@@ -97,8 +97,40 @@ body, html {
 	<div id="about-div">
 		<br><br>
 		<h1 style="font-size: 60px; font-weight: 600;">Theme: <p>Corruption</p></h1>
-		<!--<br><br>
-		<h1 style="font-size: 60px; font-weight: 600;">Late submissions by <p class="timer" time="1672617600000"></p></h1>-->
+		<br><br>
+		<h1 style="font-size: 60px; font-weight: 600;">Submissions by <p id="demo"></p>
+			<!--countdown timer-->
+			
+			<script>
+			// Set the date we're counting down to
+			var countDownDate = new Date("July 23, 2023 23:59:59").getTime();
+			
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+			
+			  // Get today's date and time
+			  var now = new Date().getTime();
+			  // Find the distance between now and the count down date
+			  var distance = countDownDate - now;
+				
+			  // Time calculations for days, hours, minutes and seconds
+			  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+				
+			  // Output the result in an element with id="demo"
+			  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+			  + minutes + "m " + seconds + "s ";
+				
+			  // If the count down is over, write some text 
+			  if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("demo").innerHTML = "EXPIRED";
+			  }
+			}, 1000);
+			</script>
+		</h1>
 		<br><br>
 		<h1 style="font-size: 42px; font-weight: 600;">About MelonJam:</h1>
 		<h1 style="width: 80vw; margin: auto; line-height: 1.75; font-weight: 400; font-size: 30px; font-family: 'Poppins', sans-serif;">
@@ -359,10 +391,10 @@ body, html {
 		<h1 style="font-size: 42px; font-weight: 600;">Team - Board of Directors:</h1>
 		<h1 style="font-weight: 400; font-size: 30px; font-family: 'Poppins', sans-serif; line-height: 1.75;">
 			Lead: Jolie Han<br>
-			Operations: Tyler Glawitsch<br>
+			Operations: Tyler Glawitsch, Arnav Gupta<br>
 			Logistics: Vaishak Renjith, Winfred Lin<br>
 			Public Relations: Lydia Lei<br>
-			Outreach: Laurier Ke, Arnav Gupta, Faye Yu, Rohan Naphade
+			Outreach: Laurier Ke, Faye Yu, Rohan Naphade
 		</h1>
 		<br><br>
 	</div>
