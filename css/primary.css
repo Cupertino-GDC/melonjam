@@ -1,7 +1,3 @@
-@font-face {
-    font-family: "Century Gothic";
-    src: url(fonts\gothicb.ttf);
-}
 
 ::selection {
     background: rgba(118, 250, 255, 0.164);
