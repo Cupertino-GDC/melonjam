@@ -30,12 +30,6 @@
     background: rgb(95, 157, 101);
 }
 
-h1, h2, h3, h4, span {
-    font-family: "Century Gothic";
-    font-weight: 400;
-    margin: 0px;
-}
-
 #header-div {
     background: linear-gradient(313deg, rgba(2,0,36,1) 0%, rgba(188,255,229,1) 0%, rgba(197,239,246,1) 61%);
     margin-top: -15px;
