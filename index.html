@@ -51,6 +51,35 @@ body, html {
 	 background-color: rgb(100, 100, 100);
 }
 
+#customers {
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.game {
+	object-fit: cover;
+	cursor: pointer; 
+}
+
 </style>
 
 <body>
@@ -141,42 +170,39 @@ body, html {
 		<h1 style="font-size: 60px; font-weight: 600;">Late submissions by <p class="timer" time="1672617600000"></p></h1>-->
 		<br><br>
 
-		<h1 style="font-size: 42px; font-weight: 600;">Winners:</h1>
-		<br>
-		<div id="sponsors-div">
-			<h1 style="font-size: 42px; font-weight: 600;">Novice</h1>
-			<h1 style="font-size: 42px; font-weight: 600;">Gold: Fly Feast</h1>
-			<img src="images/Winter MelonJam 2023/games/flyFeast.png" alt="Fly Feast" class="sponsor" width="400px" onclick="window.open('https://qwerff.itch.io/fly-feast')">
-			
-			<h1 style="font-size: 42px; font-weight: 600;">Silver: A Quarky Tale</h1>
-			<img src="images/Winter MelonJam 2023/games/aQuarkyTale.png" alt="A Quarky Tale" class="sponsor" width="400px" onclick="window.open('https://willyue.itch.io/a-quarky-tale')">
-			
-			<h1 style="font-size: 42px; font-weight: 600;">Bronze: Nepguin</h1>
-			<img src="images/Winter MelonJam 2023/games/nepguin.png" alt="Nepguin" class="sponsor" width="400px" onclick="window.open('https://realdevfrog.itch.io/nepguin')">
-
-			<br><br>
-			<h1 style="font-size: 42px; font-weight: 600;">Intermediate</h1>
-			<h1 style="font-size: 42px; font-weight: 600;">Gold: The Bosta Bar</h1>
-			<img src="images/Winter MelonJam 2023/games/theBostaBar.png" alt="The Bosta Bar" class="sponsor" width="400px" onclick="window.open('https://faceleste.itch.io/the-bosta-bar')">
-			
-			<h1 style="font-size: 42px; font-weight: 600;">Silver: Little Charm Artisan</h1>
-			<img src="images/Winter MelonJam 2023/games/littleCharmArtisan.png" alt="Little Charm Artisan" class="sponsor" width="400px" onclick="window.open('https://44kyam.itch.io/little-charm-artisan')">
-			
-			<h1 style="font-size: 42px; font-weight: 600;">Bronze: Logi.Charm</h1>
-			<img src="images/Winter MelonJam 2023/games/logicharm.png" alt="Logi.Charm" class="sponsor" width="400px" onclick="window.open('https://triangle-interactive.itch.io/logi-charm')">
-
-			<br><br>
-			<h1 style="font-size: 42px; font-weight: 600;">Advanced</h1>
-			<h1 style="font-size: 42px; font-weight: 600;">Gold: Jumpswap</h1>
-			<img src="images/Winter MelonJam 2023/games/jumpswap.png" alt="Jumpswap" class="sponsor" width="400px" onclick="window.open('https://malek-elsady.itch.io/jumpswap')">
-			
-			<h1 style="font-size: 42px; font-weight: 600;">Silver: Charming up the Corporate Ladder</h1>
-			<img src="images/Winter MelonJam 2023/games/charmingUp.png" alt="Charming up the Corporate Ladder" class="sponsor" width="400px" onclick="window.open('https://brewed-leaves.itch.io/charming-up-the-corporate-ladder')">
-			
-			<h1 style="font-size: 42px; font-weight: 600;">Bronze: Charmageddon</h1>
-			<img src="images/Winter MelonJam 2023/games/charmageddon.png" alt="Charmageddon" class="sponsor" width="400px" onclick="window.open('https://tikinl.itch.io/charmagegeddon')">
-		</div>
-		<br><br>
+		<table id="customers">
+			<tr>
+				<th>Category</th>
+			  <th>Gold</th>
+			  <th>Silver</th>
+			  <th>Bronze</th>
+			</tr>
+			<tr>
+				<td>Novice</td>
+			  <td><h1 style="font-size: 42px; font-weight: 600;">Fly Feast</h1><img class="game" src="images/Winter MelonJam 2023/games/flyFeast.png" alt="Fly Feast" class="sponsor" width="400px" onclick="window.open('https://qwerff.itch.io/fly-feast')"></td>
+			  <td><h1 style="font-size: 42px; font-weight: 600;">A Quarky Tale</h1><img class="game" src="images/Winter MelonJam 2023/games/aQuarkyTale.png" alt="A Quarky Tale" class="sponsor" width="400px" onclick="window.open('https://willyue.itch.io/a-quarky-tale')"></td>
+			  <td><h1 style="font-size: 42px; font-weight: 600;">Nepguin</h1><img class="game" src="images/Winter MelonJam 2023/games/nepguin.png" alt="Nepguin" class="sponsor" width="400px" onclick="window.open('https://realdevfrog.itch.io/nepguin')"></td>
+			</tr>
+			<tr>
+				<td>Intermediate</td>
+			  <td><h1 style="font-size: 42px; font-weight: 600;">The Bosta Bar</h1>
+				<img class="game"src="images/Winter MelonJam 2023/games/theBostaBar.png" alt="The Bosta Bar" class="sponsor" width="400px" onclick="window.open('https://faceleste.itch.io/the-bosta-bar')"></td>
+			  <td><h1 style="font-size: 42px; font-weight: 600;">Little Charm Artisan</h1>
+				<img class="game"src="images/Winter MelonJam 2023/games/littleCharmArtisan.png" alt="Little Charm Artisan" class="sponsor" width="400px" onclick="window.open('https://44kyam.itch.io/little-charm-artisan')"></td>
+			  <td><h1 style="font-size: 42px; font-weight: 600;">Logi.Charm</h1>
+				<img class="game"src="images/Winter MelonJam 2023/games/logicharm.png" alt="Logi.Charm" class="sponsor" width="400px" onclick="window.open('https://triangle-interactive.itch.io/logi-charm')"></td>
+			</tr>
+			<tr>
+				<td>Advanced</td>
+			  <td><h1 style="font-size: 42px; font-weight: 600;">Jumpswap</h1>
+				<img class="game"src="images/Winter MelonJam 2023/games/jumpswap.png" alt="Jumpswap" class="sponsor" width="400px" onclick="window.open('https://malek-elsady.itch.io/jumpswap')"></td>
+			  <td><h1 style="font-size: 42px; font-weight: 600;">Charming up the Corporate Ladder</h1>
+				<img class="game"src="images/Winter MelonJam 2023/games/charmingUp.png" alt="Charming up the Corporate Ladder" class="sponsor" width="400px" onclick="window.open('https://brewed-leaves.itch.io/charming-up-the-corporate-ladder')"></td>
+			  <td><h1 style="font-size: 42px; font-weight: 600;">Charmageddon</h1>
+				<img class="game"src="images/Winter MelonJam 2023/games/charmageddon.png" alt="Charmageddon" class="sponsor" width="400px" onclick="window.open('https://tikinl.itch.io/charmagegeddon')"></td>
+			</tr>
+		  </table>
+		<br><br> 
 
 		<h1 style="font-size: 42px; font-weight: 600;">About MelonJam:</h1>
 		<h1 style="width: 80vw; margin: auto; line-height: 1.75; font-weight: 400; font-size: 30px; font-family: 'Poppins', sans-serif;">
