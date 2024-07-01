@@ -430,6 +430,7 @@
     .legal {
         width: 80%;
     }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -438,6 +439,11 @@
         padding: 12px 96px;
         border-bottom: solid 3px rgb(127, 209, 134);
         margin-bottom: 20px;
+    }
+
+    #golds {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -452,6 +458,8 @@
         margin: 25px 0px;
         max-width: 80vw;
     }
+
+
 }
 
 @media screen and (max-width: 500px) {
