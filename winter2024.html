@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Page Preview Information -->
+    <meta name="description"
+        content="Winter MelonJam is a game jam created by the Cupertino Game Dev Club with the intent of bridging the gap between aspiring game developers, especially students, and experienced game developers.">
+    <meta name="keywords"
+        content="MelonJam 2, MelonJam 3, Winter MelonJam, Melon Jam, MelonJam, Game Jam, CGDC, GDC, Game Dev Club, Cupertino, Cupertino Game Dev Club, Cupertino Game Development Club, Hackathon, Games, Video Games, Programming, Coding, Development, Unity, C#">
+    <meta property="og:title" content="Winter MelonJam">
+    <meta property="twitter:title" content="Winter MelonJam">
+    <meta property="og:description"
+        content="Winter MelonJam is a game jam created by the Cupertino Game Dev Club with the intent of bridging the gap between high schoolers with a game development interest and experienced game developers.">
+    <meta property="twitter:description"
+        content="Winter MelonJam is a game jam created by the Cupertino Game Dev Club with the intent of bridging the gap between high schoolers with a game development interest and experienced game developers.">
+    <meta property="og:image" content="images/Winter MelonJam 2023/logos/icon.png">
+    <meta property="twitter:image" content="images/Winter MelonJam 2023/logos/icon.png">
+    <meta property="og:url" content="https://gamedevclub.tech/melonjam/">
+    <link rel="shortcut icon" href="images/Winter MelonJam 2023/logos/icon.png" />
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/primary.css">
+
+    <!-- JavaScripts -->
+    <script type="text/javascript" src="js/primary.js"></script>
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Winter MelonJam</title>
+
+</head>
+
+<style type="text/css">
+    body,
+    html {
+        background-color: rgb(100, 100, 100);
+    }
+
+    #customers {
+        border-collapse: collapse;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #customers td,
+    #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #customers tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #customers tr:hover {
+        background-color: #ddd;
+    }
+
+    #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    .game {
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    @media (max-width: 1250px) {
+        #customers {
+            display: none;
+        }
+
+        .title {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+
+    <div id="header-div">
+        <br>
+        <nav class="navbar navbar-expand-md bg-transparent navbar-light">
+            <a class="navbar-brand" href="#" onclick="scrollToTop()">
+                <img src="images/Winter MelonJam 2023/logos/icon.png" alt="MelonJam" id="navbar-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-toggleable-sm" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="navbutton" href="#about" onclick="scrollToElement('about-div')">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbutton" href="#schedule" onclick="scrollToElement('schedule-div')">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbutton" href="#sponsors" onclick="scrollToElement('sponsors-div')">Sponsors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbutton" href="#team" onclick="scrollToElement('team-div')">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbutton" href="#FAQ" onclick="scrollToElement('faq-div')">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <img src="images/Winter MelonJam 2024/2024wmj.png" alt="MelonJam" id="header-logo" onclick="scrollToTop()">
+
+        <!-- <h1 id="dates"><span style="color: rgb(127, 209, 134);">July 23rd</span> <span style="color: rgb(255, 195, 103);">to</span> <span style="color: rgb(255, 195, 103);">July 25th</span></h1> -->
+
+        <br><br>
+
+        <a href="https://itch.io/jam/wmj2024" id="join-button" target="_blank">Join Now!</a>
+        <br><br><br><br>
+    </div>
+
+
+    <div id="about-div">
+        <br><br>
+        <h1 style="font-size: 60px; font-weight: 600;">Theme:</h1>
+        <img src="images/Winter MelonJam 2024/theme.png" alt="Theme" class="theme" width="921">
+        <!-- <h1 style="font-size: 50px; font-weight: 600; font-family: 'Century Gothic', sans-serif;">Starts in <p
+				id="demo"></p>
+
+			<script>
+				// Set the date we're counting down to
+				var countDownDate = new Date("2024-12-27T17:00:00Z");
+
+				// Update the count down every 1 second
+				var x = setInterval(function () {
+
+					// Get today's date and time
+					var now = new Date().getTime();
+					// Find the distance between now and the count down date
+					var distance = countDownDate - now;
+
+					// Time calculations for days, hours, minutes and seconds
+					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+					// Output the result in an element with id="demo"
+					document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+						+ minutes + "m " + seconds + "s ";
+
+					// If the count down is over, write some text 
+					if (distance < 0) {
+						clearInterval(x);
+						document.getElementById("demo").innerHTML = "EXPIRED";
+					}
+				}, 1000);
+			</script> -->
+        </h1>
+        <br><br>
+        <!-- <br><br> -->
+        <!-- <h1 style="font-size: 60px; font-weight: 600;">Theme: <p>Cozy</p></h1> -->
+        <!--<br><br>
+		<h1 style="font-size: 60px; font-weight: 600;">Late submissions by <p class="timer" time="1672617600000"></p></h1>-->
+        <!-- <br><br> -->
+
+        <h1 class="title" style="font-size: 50px; font-weight: 600;">Winners</h1>
+        <br>
+        <table id="customers">
+            <tr>
+                <th>Category</th>
+                <th>Gold</th>
+                <th>Silver</th>
+                <th>Bronze</th>
+            </tr>
+            <tr>
+                <td>Novice</td>
+                <td>
+                    <h1 style="font-size: 42px; font-weight: 600;">Space and Magnets</h1><img class="game"
+                        src="https://img.itch.zone/aW1nLzE5MTg0MDQ3LnBuZw==/315x250%23c/8ivWNT.png" alt="Fly Feast"
+                        class="sponsor" width="400px"
+                        onclick="window.open('https://crownedduck.itch.io/space-and-magnets')">
+                </td>
+                <td>
+                    <h1 style="font-size: 42px; font-weight: 600;">Bipolar Polar Bear</h1><img class="game"
+                        src="https://img.itch.zone/aW1nLzE5MTk5OTI2LnBuZw==/315x250%23c/nb9m7h.png" alt="A Quarky Tale"
+                        class="sponsor" width="400px"
+                        onclick="window.open('https://yofiasi.itch.io/bipolar-polar-bear')">
+                </td>
+                <td>
+                    <h1 style="font-size: 42px; font-weight: 600;">All's Fair In Tug of War</h1><img class="game"
+                        src="https://img.itch.zone/aW1nLzE5MTg3NDc0LnBuZw==/315x250%23c/t9qDTy.png" alt="Nepguin"
+                        class="sponsor" width="400px"
+                        onclick="window.open('https://eshevek.itch.io/alls-fair-in-tug-of-war')">
+                </td>
+            </tr>
+            <tr>
+                <td>Intermediate</td>
+                <td>
+                    <h1 style="font-size: 42px; font-weight: 600;">Polasta</h1>
+                    <img class="game" src="https://img.itch.zone/aW1nLzE5MTgyMzQ0LnBuZw==/original/voiivb.png"
+                        alt="The Bosta Bar" class="sponsor" width="400px"
+                        onclick="window.open('https://paperhatlizard.itch.io/polasta')">
+                </td>
+                <td>
+                    <h1 style="font-size: 42px; font-weight: 600;">Polar Skies</h1>
+                    <img class="game" src="https://img.itch.zone/aW1nLzE5MTgzODQ2LnBuZw==/315x250%23c/%2FmxfoB.png"
+                        alt="Little Charm Artisan" class="sponsor" width="400px"
+                        onclick="window.open('https://itch.io/jam/wmj2024/rate/3212294')">
+                </td>
+                <td>
+                    <h1 style="font-size: 42px; font-weight: 600;">Corruption's Edge</h1>
+                    <img class="game" src="https://img.itch.zone/aW1nLzE5MTg2ODM1LnBuZw==/315x250%23c/%2BV0GGM.png"
+                        alt="Logi.Charm" class="sponsor" width="400px"
+                        onclick="window.open('https://itch.io/jam/wmj2024/rate/3212908')">
+                </td>
+            </tr>
+            <tr>
+                <td>Advanced</td>
+                <td>
+                    <h1 style="font-size: 42px; font-weight: 600;">Frozen Garden</h1>
+                    <img class="game" src="https://img.itch.zone/aW1nLzE5MTgyNzgxLnBuZw==/315x250%23c/WPfHMh.png"
+                        alt="Jumpswap" class="sponsor" width="400px"
+                        onclick="window.open('https://itch.io/jam/wmj2024/rate/3212118')">
+                </td>
+                <td>
+                    <h1 style="font-size: 42px; font-weight: 600;">Meloneutral Bandit</h1>
+                    <img class="game" src="https://img.itch.zone/aW1nLzE5MzYxMjI2LnBuZw==/315x250%23c/1ePhPh.png"
+                        alt="Charming up the Corporate Ladder" class="sponsor" width="400px"
+                        onclick="window.open('https://itch.io/jam/wmj2024/rate/3212792')">
+                </td>
+                <td>
+                    <h1 style="font-size: 42px; font-weight: 600;">Dermimi's</h1>
+                    <img class="game" src="https://img.itch.zone/aW1nLzE5MTgzMDU2LmdpZg==/315x250%23c/HoG0v1.gif"
+                        alt="Charmageddon" class="sponsor" width="400px"
+                        onclick="window.open('https://itch.io/jam/wmj2024/rate/3211887')">
+                </td>
+            </tr>
+        </table>
+        <br><br>
+
+        <h1 style="font-size: 42px; font-weight: 600;">About MelonJam:</h1>
+        <h1
+            style="width: 80vw; margin: auto; line-height: 1.75; font-weight: 400; font-size: 30px; font-family: 'Poppins', sans-serif;">
+            Winter MelonJam 2024 is the winter edition of the much-loved MelonJam, a 3-day long game jam (an event where
+            people get together and make small games, normally in a short time span). <b>Winter MelonJam will be from
+                December 27th-30th 5:00 PM UTC!</b> The theme will be announced at the start of the jam. It can be
+            worrying to
+            take on enormous, time-consuming projects like full games, and it can be difficult to brainstorm new ideas,
+            but MelonJam seeks to help make this process much easier and fun, with the focus on generating and
+            prototyping new ideas. We provide many tutorials, prizes, and guides for beginners, such as a recommended
+            schedule you can find further down in the page.
+            <br><br>
+            <span id="about-more-text">
+                Winter MelonJam was created by the Cupertino Game Development Club with the intent of bridging the gap
+                between high schoolers with a game development interest and experienced game developers. We offer a
+                chance for students interested in game development to try their hand at making a small game while
+                encouraging them to improve their skills so that they can make something big in the future. True to the
+                purpose of a game jam, MelonJam also gives developers a chance to have fun brainstorming and developing
+                a game, irrespective of experience.
+                <br><br>
+            </span>
+        </h1>
+        <a id="read-more-button" onclick="readMore()">Read more</a>
+        <br><br><br><br>
+    </div>
+
+    <iframe src="https://alimadcorp.github.io/extras/wmj24tier.html" title="Tier Selector" width="100%"
+        height="600px"></iframe>
+
+
+    <div id="schedule-div">
+        <br>
+        <h1 style="font-size: 42px; font-weight: 600;">Schedule (UTC):</h1>
+        <!-- <br>
+		<h1 style="font-weight: 400; font-size: 36px; font-family: 'Poppins', sans-serif; line-height: 2;"><i>August 6th, 8:00 AM:</i> Theme Announced<br><i>August 9th, 6:00 PM:</i> MelonJam Ends</h1>
+		<br><br><br> -->
+
+        <div id="days">
+            <hr style="border-color: black;">
+            <br><br>
+            <h1 class="day-text">12/27</h1>
+            <hr style="border-color: black;">
+            <br><br>
+            <h1 class="day-text">12/28</h1>
+            <hr style="border-color: black;">
+            <br><br>
+            <h1 class="day-text">12/29</h1>
+            <hr style="border-color: black;">
+            <br><br>
+            <h1 class="day-text">12/30</h1>
+            <hr style="border-color: black;">
+            <br><br>
+            <h1 class="day-text">1/14</h1>
+            <hr style="border-color: black;">
+        </div>
+
+        <div id="timings">
+            <div class="time-column">
+                <h1 class="time-text">5:00 PM UTC</h1>
+                <br>
+                <div class="event special" onclick="openModal('start-modal')">
+                    <h4 style="color: rgb(100, 100, 100);">5:00 PM UTC</h4>
+                    <h3>Game Jamming<br>Starts!</h3>
+                </div>
+                <div id="start-modal" class="event-modal">
+                    <span class="close" onclick="closeModal('start-modal')">&times</span>
+                    <h3 style="font-weight: 700">Game Jamming Begins!</h3>
+                    <div style="margin-top: 15px; padding-left: 5px;">
+                        <i class="icon fa fa-clock-o"></i>
+                        <h4
+                            style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;">
+                            12/28, 5:00 PM UTC</h4>
+                        <br>
+                        <i class="icon fa fa-external-link"></i>
+                        <h4
+                            style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;">
+                            <a href="https://itch.io/jam/winter-melonjam-2023">Itch</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="event placeholder">
+                    <h1>placeholder</h1>
+                </div>
+                <div class="event placeholder">
+                    <h1>placeholder</h1>
+                </div>
+                <div class="event placeholder">
+                    <h1>placeholder</h1>
+                </div>
+                <div class="event special" onclick="openModal('speaker-modal')">
+                    <h4 style="color: rgb(100, 100, 100);">5:00 PM UTC</h4>
+                    <h3>Winners<br>Released!</h3>
+                </div>
+                <div id="speaker-modal" class="event-modal" style="margin-top: 15px">
+                    <span class="close" onclick="closeModal('speaker-modal')">&times</span>
+                    <h3 style="font-weight: 700">Winners Released!</h3>
+                    <div style="margin-top: 15px; padding-left: 5px;">
+                        <i class="icon fa fa-clock-o"></i>
+                        <h4
+                            style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;">
+                            1/7, 5:00 PM UTC</h4>
+                    </div>
+                </div>
+
+                <br>
+            </div>
+
+            <div class="time-column">
+                <h1 class="time-text">5:00 PM UTC</h1>
+                <br>
+                <div class="event placeholder">
+                    <h1>placeholder</h1>
+                </div>
+                <div class="event placeholder">
+                    <h1>placeholder</h1>
+                </div>
+                <div class="event placeholder">
+                    <h1>placeholder</h1>
+                </div>
+                <div class="event placeholder">
+                    <h1>placeholder</h1>
+                </div>
+                <br>
+            </div>
+
+            <div class="time-column">
+                <h1 class="time-text">5:00 PM UTC</h1>
+                <br>
+                <div class="event placeholder">
+                    <h1>placeholder</h1>
+                </div>
+                <div class="event placeholder">
+                    <h1>placeholder</h1>
+                </div>
+                <div class="event placeholder">
+                    <h1>placeholder</h1>
+                </div>
+                <div class="event special" onclick="openModal('end-modal')">
+                    <h4 style="color: rgb(100, 100, 100);">5:00 PM UTC</h4>
+                    <h3>Game Jamming<br>Ends</h3>
+                </div>
+                <div id="end-modal" class="event-modal" style="margin-top: 15px">
+                    <span class="close" onclick="closeModal('end-modal')">&times</span>
+                    <h3 style="font-weight: 700">Game Jamming Ends!</h3>
+                    <div style="margin-top: 15px; padding-left: 5px;">
+                        <i class="icon fa fa-clock-o"></i>
+                        <h4
+                            style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;">
+                            12/30, 5:00 PM UTC</h4>
+                        <br>
+                        <i class="icon fa fa-external-link"></i>
+                        <h4
+                            style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;">
+                            <a href="https://itch.io/jam/winter-melonjam-2023">Itch</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="event placeholder">
+                    <h1>placeholder</h1>
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <!-- <a id="schedule-extra-button" href="https://docs.google.com/document/u/2/d/e/2PACX-1vS5exbYTrnrH4fh5Hk76hvXFWTLVsvRpTIGnIp1Lgep0XXe35ehi75WpvubAvUf_Ws_qDwAy9gmnwWi/pub">View recommended schedule</a> -->
+    </div>
+
+    <div id="sponsors-div">
+        <br><br>
+        <h1 style="font-size: 42px; font-weight: 600; font-family: 'Century Gothic', sans-serif;">MelonJam Sponsors &
+            Partners:</h1>
+
+
+        <br>
+
+        <h1 style="font-size: 42px; font-weight: 600; font-family: 'Century Gothic', sans-serif;">Gold Tier</h1>
+
+        <div style="width: 500px; position: relative;" class="sponsor">
+            <img decoding="async" width="177" height="192"
+                src="https://cartooncoffeegames.com/wp-content/uploads/2023/01/CC-Wave-001.gif"
+                class="attachment-large size-large wp-image-298" style="-webkit-filter: drop-shadow(5px 5px 5px #ffd700);
+    filter: drop-shadow(5px 5px 5px #ffd700);" onclick="window.open('https://cartooncoffeegames.com/')">
+
+            <img src="images/Winter MelonJam 2023/sponsors/cartoon-coffee.png" alt="Cartoon Coffee"
+                style="width:fit-content; position: absolute; top: 50%; left: 50%; transform: translate(-65%, -20%); min-width: 446px"
+                class="sponsor sp-gold" width="446" height="121"
+                onclick="window.open('https://cartooncoffeegames.com/')">
+        </div>
+
+        <img src="images/Winter MelonJam 2023/sponsors/synty_studios.png" alt="Synty Studios" class="sponsor sp-gold"
+            width="400" height="150" onclick="window.open('https://www.syntystudios.com/')">
+
+        <img src="https://img.itch.zone/aW1nLzE4ODg1MzI3LnBuZw==/original/Z6QDWV.png" alt="Synty Studios"
+            class="sponsor sp-gold" width="300" height="150" onclick="window.open('https://gamesalad.com/')">
+
+
+
+
+
+        <h1 style="font-size: 42px; font-weight: 600; font-family: 'Century Gothic', sans-serif;">Silver Tier</h1>
+
+
+
+        <img src="images/MelonJam 5/sponsors/onepassword.png" alt="1password" class="sponsor sp-silver" width="300"
+            height="=80" onclick="window.open('https://1password.com/')">
+
+        <img src="images/Winter MelonJam 2023/sponsors/WeLoveIndies.png" alt="WeLoveIndies" class="sponsor sp-silver"
+            width="300" height="73" onclick="window.open('https://www.weloveindies.com/en')">
+
+        <br>
+        <img src="images/Winter MelonJam 2023/sponsors/interview-cake.png" alt="Interview Cake"
+            class="sponsor sp-silver" width="400" height="74" onclick="window.open('https://www.interviewcake.com/')">
+
+        <img src="images/Winter MelonJam 2023/sponsors/wolfram.png" alt="Wolfram" class="sponsor sp-silver" width="170"
+            height="136.5" onclick="window.open('https://www.wolfram.com')">
+
+
+
+        <img src="https://img.itch.zone/aW1nLzE4ODc5OTY0LnBuZw==/original/%2B0Q30r.png" alt="Simmer.io"
+            class="sponsor sp-silver" width="250" height="80" onclick="window.open('https://odininspector.com/')">
+
+        <br>
+
+        <h1 style="font-size: 42px; font-weight: 600; font-family: 'Century Gothic', sans-serif;">Bronze Tier</h1>
+
+        <img src="https://img.itch.zone/aW1nLzE4ODc5OTE0LnBuZw==/original/OSXOo1.png" alt="Desos"
+            class="sponsor sp-bronze" width="300" height="80" onclick="window.open('https://kronnect.com/')">
+
+        <img src="https://img.itch.zone/aW1nLzE4ODc5OTM1LnBuZw==/original/qq7Xly.png" alt="Construct"
+            class="sponsor sp-bronze" width="180" height="180" onclick="window.open('https://armory3d.org/')">
+
+        <img src="https://img.itch.zone/aW1nLzE4ODc5OTE4LnBuZw==/original/o7BPbw.png" alt="Kenney"
+            class="sponsor sp-bronze" width="260" height="60"
+            onclick="window.open('https://www.image-line.com/fl-studio/')">
+
+        <br>
+        <img src="images/Winter MelonJam 2023/sponsors/aseprite.png" alt="Aseprite" class="sponsor sp-bronze"
+            width="142" height="57" onclick="window.open('https://aseprite.com')">
+
+        <img src="images/Winter MelonJam 2023/sponsors/pyxel-edit.png" alt="Pyxel Edit" class="sponsor sp-bronze"
+            width="158" height="58" onclick="window.open('https://pyxeledit.com/')">
+        <img src="https://img.itch.zone/aW1nLzE4ODc5ODcyLnBuZw==/original/%2FQEGdJ.png" alt="AoPS"
+            class="sponsor sp-bronze" width="240" height="80" onclick="window.open('https://www.minifantasy.net/')">
+
+        <br>
+
+        <h1 style="font-size: 42px; font-weight: 600; font-family: 'Century Gothic', sans-serif;">Powered By</h1>
+
+        <img src="images/Winter MelonJam 2023/sponsors/hack+.png" alt="Hack+" class="sponsor" style="-webkit-filter: drop-shadow(20px 20px 20px #579dff);
+    filter: drop-shadow(20px 20px 20px #579dff);" width="250" height="70" onclick="window.open('https://hackplus.io')">
+        <br><br>
+
+        <h1 style="font-size: 42px; font-weight: 600;">Interested in Sponsoring? Check out our:</h1>
+        <br>
+        <a id="prospectus-button" target="_blank"
+            href="https://drive.google.com/file/d/1rzOGh5JLQzOQ8kSi34Z1xXZ49QATA4wv/view">Sponsorship Prospectus</a>
+        <br>
+        <br>
+        <br>
+        <h1 style="font-size: 42px; font-weight: 600;"> Or email: melonjamgdc@gmail.com</h1>
+        <br><br>
+    </div>
+
+    <div id="team-div">
+        <br>
+        <h1 style="font-size: 42px; font-weight: 600;">Team - Board of Directors:</h1>
+        <h1 style="font-weight: 400; font-size: 30px; font-family: 'Poppins', sans-serif; line-height: 1.75;">
+            Lead: Laurier Ke<br>
+            Operations: Winfred Lin<br>
+            Logistics: Faye Yu, Qinzhao Li, Richard Zhang<br>
+            Public Relations: Lydia Lei, Matthew Xu<br>
+            Outreach: Rohan Naphade, George Tsirigotis
+        </h1>
+        <br><br>
+    </div>
+
+    <div id="faq-div">
+        <br><br>
+        <h1 style="font-size: 42px; font-weight: 600; font-family: 'Century Gothic', sans-serif;">Frequently Asked
+            Questions:</h1>
+        <br>
+
+        <div class="faq" onclick="expandFAQ(0)" onmouseover="enterHoverFAQ(0)" onmouseout="exitHoverFAQ(0)">
+            <h1 style="font-weight: 500;">What's a game jam?</h1>
+            <p class="faq-answer">
+                <br>
+                A game jam is a lot like a hackathon for games. People develop games using any tools that they have,
+                then submit them by a due date. As with hackathons, people are free to use any resources that are
+                available to them to develop their game: their game engine of choice, their digital art program of
+                choice, youtube coding tutorials, books on art, anything. You can even use human resources—you can team
+                up with others to make your game better.
+                <br><br>
+                Most game jams, as does MelonJam, also have a theme. Some jams prefer or require that you stick to the
+                theme; others don’t, and only intend for the theme to be a tool to kickstart your brainstorming. To make
+                the jam more challenging and to enforce creativity via restriction, MelonJam requires that you connect
+                your game to the theme in some way.
+                <br><br>
+            </p>
+        </div>
+
+        <div class="faq" onclick="expandFAQ(1)" onmouseover="enterHoverFAQ(1)" onmouseout="exitHoverFAQ(1)">
+            <h1 style="font-weight: 500;">Who qualifies for each category?</h1>
+            <p class="faq-answer">
+                <br>
+                In general, anyone who does not have much experience in game jams or game-making can participate in the
+                Novice
+                category; those who are moderately experienced participate in Intermediate; those who are more skilled
+                in terms of
+                years of experience or completed projects/jams participate in Advanced. We have more detailed guidelines
+                for determining
+                your division, please use the tier selector above.
+                <br><br>
+                We encourage participants who are more skilled to participate in any category above the one they qualify
+                for, as these
+                categories often have less competition (especially Advanced). Teams may also be disqualified
+                if their submission is unreasonably skilled, especially in Novice.
+                <br><br>
+                No category is limited to age or grade, and we welcome everyone to participate.
+                <br><br>
+            </p>
+        </div>
+
+        <div class="faq" onclick="expandFAQ(2)" onmouseover="enterHoverFAQ(2)" onmouseout="exitHoverFAQ(2)">
+            <h1 style="font-weight: 500;">Do I have to follow the theme?</h1>
+            <p class="faq-answer">
+                <br>
+                Yes; to be eligible for a prize, your game must have some aspect that fits the theme in some way. This
+                is because we want to make the jam more challenging as well as enforce creativity through restriction.
+                <br><br>
+            </p>
+        </div>
+
+        <br>
+
+        <div class="faq" onclick="expandFAQ(3)" onmouseover="enterHoverFAQ(3)" onmouseout="exitHoverFAQ(3)">
+            <h1 style="font-weight: 500;">I’m not a high schooler; I’m younger/older than one. Can I still join? </h1>
+            <p class="faq-answer">
+                <br>
+                Yes; we do not intend to restrict anyone from participating in MelonJam. While we do target
+                pre-collegiate students in particular, we believe that there is much to gain from having people from all
+                sorts of backgrounds share their games and ideas with others.
+                <br><br>
+                That said, we sometimes have a few prizes that strictly benefit high schoolers, but if you win them, you
+                can choose to pass them on.
+                <br><br>
+            </p>
+        </div>
+
+        <div class="faq" onclick="expandFAQ(4)" onmouseover="enterHoverFAQ(4)" onmouseout="exitHoverFAQ(4)">
+            <h1 style="font-weight: 500;">I’d like to work as a team. Can I?</h1>
+            <p class="faq-answer">
+                <br>
+                Yes, you may work in teams of up to 4 people. If you are set on having a team larger than that, contact
+                the hosts. However, depending on the exact numbers, having team members who are experienced in
+                game-making
+                will require you to enter in higher divisions.
+                <br><br>
+            </p>
+        </div>
+
+        <br><br>
+    </div>
+
+    <footer id="footer">
+        <br><br><br>
+        <h2 class="footerMJ" onclick="window.open('./index.html')">Back to the present</h2>
+        <h4 class="footerGDC" onclick="window.location.href = 'https://gamedevclub.tech'">Hosted by GDC<h4>
+                <br>
+    </footer>
+
+</body>
+
+</html>
