@@ -17,10 +17,10 @@
 		content="MelonJam 6 is a game jam created by the Cupertino Game Dev Club with the intent of bridging the gap between high schoolers with a game development interest and experienced game developers.">
 	<meta property="twitter:description"
 		content="MelonJam 6 is a game jam created by the Cupertino Game Dev Club with the intent of bridging the gap between high schoolers with a game development interest and experienced game developers.">
-	<meta property="og:image" content="images/Winter MelonJam 2023/logos/icon.png">
-	<meta property="twitter:image" content="images/Winter MelonJam 2023/logos/icon.png">
+	<meta property="og:image" content="images/Shared/logos/melon-icon.png">
+	<meta property="twitter:image" content="images/Shared/logos/melon-icon.png">
 	<meta property="og:url" content="https://gamedevclub.tech/melonjam/">
-	<link rel="shortcut icon" href="images/Winter MelonJam 2023/logos/icon.png" />
+	<link rel="shortcut icon" href="images/Shared/logos/melon-icon.png" />
 
 	<!-- CSS stylesheets -->
 	<link rel="stylesheet" href="css/2025.css">
@@ -109,7 +109,7 @@
 		<br>
 		<nav class="navbar navbar-expand-md bg-transparent navbar-light">
 			<a class="navbar-brand" href="#" onclick="scrollToTop()">
-				<img src="images/Winter MelonJam 2023/logos/icon.png" alt="MelonJam" id="navbar-logo">
+				<img src="images/Shared/logos/melon-icon.png" alt="MelonJam" id="navbar-logo">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 				<span class="navbar-toggler-icon"></span>
@@ -135,27 +135,25 @@
 			</div>
 		</nav>
 
-		<img src="images/Winter MelonJam 2024/2024wmj.png" alt="MelonJam" id="header-logo" onclick="scrollToTop()">
+		<img src="images/Shared/logos/melon_logo.png" alt="MelonJam" id="header-logo" onclick="scrollToTop()">
 
 		<!-- <h1 id="dates"><span style="color: rgb(127, 209, 134);">July 23rd</span> <span style="color: rgb(255, 195, 103);">to</span> <span style="color: rgb(255, 195, 103);">July 25th</span></h1> -->
 
 		<br><br>
 
-		<a href="https://itch.io/jam/wmj2024" id="join-button" target="_blank">Join Now!</a>
+		<a href="https://itch.io/jam/melonjam6" id="join-button" target="_blank">Join Now!</a>
 		<br><br><br><br>
 	</div>
 
 
 	<div id="about-div">
-		<br><br>
-		<h1 style="font-size: 60px; font-weight: 600;">Theme:</h1>
-		<img src="images/Winter MelonJam 2024/theme.png" alt="Theme" class="theme" width="921">
-		<!-- <h1 style="font-size: 50px; font-weight: 600; font-family: 'Century Gothic', sans-serif;">Starts in <p
-				id="demo"></p>
+
+		<h1 style="font-size: 50px; font-weight: 600; color: #072e20;font-family: 'Century Gothic', sans-serif;">Starts in</h1>
+			<p id="demo" style="font-size: 50px; font-weight: 600; color: #ffc107;font-family: 'Century Gothic', sans-serif;"></p>
 
 			<script>
-				// Set the date we're counting down to
-				var countDownDate = new Date("2024-12-27T17:00:00Z");
+				// Set the date we're counting down to (UTC)
+				var countDownDate = new Date("2025-07-24T17:00:00Z");
 
 				// Update the count down every 1 second
 				var x = setInterval(function () {
@@ -181,7 +179,7 @@
 						document.getElementById("demo").innerHTML = "EXPIRED";
 					}
 				}, 1000);
-			</script> -->
+			</script>
 		</h1>
 		<br><br>
 		<!-- <br><br> -->
@@ -193,17 +191,16 @@
 		<h1 style="font-size: 42px; font-weight: 600;">About MelonJam:</h1>
 		<h1
 			style="width: 80vw; margin: auto; line-height: 1.75; font-weight: 400; font-size: 30px; font-family: 'Poppins', sans-serif;">
-			Winter MelonJam 2024 is the winter edition of the much-loved MelonJam, a 3-day long game jam (an event where
-			people get together and make small games, normally in a short time span). <b>Winter MelonJam will be from
-				December 27th-30th 5:00 PM UTC!</b> The theme will be announced at the start of the jam. It can be
-			worrying to
-			take on enormous, time-consuming projects like full games, and it can be difficult to brainstorm new ideas,
+			MelonJam 6 is a 3-day long game jam (an event where
+			people get together and make small games, normally in a short time span). <b>MelonJam 6 will be from
+				July 24-27th 5:00 PM UTC!</b> The theme will be announced at the start of the jam. It can be
+			worrying to take on enormous, time-consuming projects like full games, and it can be difficult to brainstorm new ideas,
 			but MelonJam seeks to help make this process much easier and fun, with the focus on generating and
 			prototyping new ideas. We provide many tutorials, prizes, and guides for beginners, such as a recommended
 			schedule you can find further down in the page.
 			<br><br>
 			<span id="about-more-text">
-				Winter MelonJam was created by the Cupertino Game Development Club with the intent of bridging the gap
+				MelonJam was created by the Cupertino Game Development Club with the intent of bridging the gap
 				between high schoolers with a game development interest and experienced game developers. We offer a
 				chance for students interested in game development to try their hand at making a small game while
 				encouraging them to improve their skills so that they can make something big in the future. True to the
@@ -221,7 +218,7 @@
 			height="50%"></iframe>
 	</div>
 
-	<div id="schedule-div">
+	<div id="schedule-div" style="display: none;">
 		<br>
 		<h1 style="font-size: 42px; font-weight: 600;">Schedule (UTC):</h1>
 		<!-- <br>
@@ -267,7 +264,7 @@
 						<i class="icon fa fa-external-link"></i>
 						<h4
 							style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;">
-							<a href="https://itch.io/jam/winter-melonjam-2023">Itch</a>
+							<a href="https://itch.io/jam/melonjam6">Itch</a>
 						</h4>
 					</div>
 				</div>
@@ -344,7 +341,7 @@
 						<i class="icon fa fa-external-link"></i>
 						<h4
 							style="font-weight: 600; font-family: 'Poppins', sans-serif; display: inline-block; padding-left: 10px; margin-top: -2px; vertical-align: top;">
-							<a href="https://itch.io/jam/winter-melonjam-2023">Itch</a>
+							<a href="https://itch.io/jam/melonjam6">Itch</a>
 						</h4>
 					</div>
 				</div>
@@ -377,8 +374,8 @@
 
 		<h1 style="font-size: 42px; font-weight: 600; font-family: 'Century Gothic', sans-serif;">Powered By</h1>
 
-		<img src="images/Winter MelonJam 2023/sponsors/hack+.png" alt="Hack+" class="sponsor" style="-webkit-filter: drop-shadow(20px 20px 20px #579dff);
-    filter: drop-shadow(20px 20px 20px #579dff);" width="250" height="70" onclick="window.open('https://hackplus.io')">
+		<img src="images/Shared/logos/hack+.png" alt="Hack+" class="sponsor" style="-webkit-filter: drop-shadow(20px 20px 20px #579dff);
+    filter: drop-shadow(20px 20px 20px #579dff);" width="30%" onclick="window.open('https://hackplus.io')">
 		<br><br>
 
 		<h1 style="font-size: 42px; font-weight: 600;">Interested in Sponsoring? Check out our:</h1>
