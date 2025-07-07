@@ -493,11 +493,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
 }
 
 html, body {
     width: 100%;
     background: linear-gradient(313deg, rgba(2, 0, 36, 1) 0%, rgba(188, 255, 229, 1) 0%, rgba(197, 239, 246, 1) 61%);
 }
+
+p,h1,h2 {
+    color:#3e738e;
+}
+
 
