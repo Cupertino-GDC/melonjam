@@ -373,7 +373,7 @@
 
 #footer {
     width: 100%;
-    background-color: rgb(100, 100, 100);
+    background-color: linear-gradient(313deg, rgba(2, 0, 36, 1) 0%, rgba(188, 255, 229, 1) 0%, rgba(197, 239, 246, 1) 61%);
     height: 100%;
     text-align: center;
     color: rgb(127, 209, 134);
@@ -505,4 +505,31 @@ p,h1,h2 {
     color:#3e738e;
 }
 
+h1 {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.game {
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.game:hover {
+    transform: scale(1.05);
+}
+
+.game-name {
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+
+.table-wrapper {
+    max-height: 300px;
+    max-width: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+    margin: 15px
+}
 
