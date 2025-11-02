@@ -520,13 +520,12 @@ h1 {
 }
 
 .game-name {
-    font-size: 4vw;
+    font-size: 42px;
     font-weight: 600;
 }
 
 
 .table-wrapper {
-    max-height: 300px;
     max-width: 100%;
     overflow-y: auto;
     overflow-x: auto;
