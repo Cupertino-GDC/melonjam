@@ -1,0 +1,534 @@
+::selection {
+    background: rgba(118, 250, 255, 0.164);
+    text-shadow: 0px 0px 2px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(197, 239, 246);
+}
+
+
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background: rgba(0, 0, 0, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(127, 209, 134);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(95, 157, 101);
+}
+
+#header-div {
+    background: linear-gradient(313deg, rgba(2, 0, 36, 1) 0%, rgba(188, 255, 229, 1) 0%, rgba(197, 239, 246, 1) 61%);
+    margin-top: -15px;
+    width: 100%;
+    text-align: center;
+}
+
+#navbar-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 35px;
+    transition: all 0.5s;
+}
+
+#navbar-logo:hover {
+    transform: scale(1.25);
+}
+
+.navbutton {
+    display: inline-block;
+    font-size: 32px;
+    color: rgb(127, 209, 134);
+    font-weight: 700;
+    padding: 12px 24px;
+    padding-bottom: 12px;
+    border-radius: 0px;
+    text-decoration: none;
+    position: relative;
+    border-bottom: solid 3px rgb(127, 209, 134);
+    margin-right: 50px;
+    transition: all 0.7s;
+}
+
+.navbutton:hover {
+    border-bottom: none;
+    border-radius: 50px;
+    text-decoration: none;
+    text-decoration-color: white;
+    color: white;
+    background-color: rgb(127, 209, 134);
+}
+
+#header-logo {
+    cursor: pointer;
+    width: 450px;
+    height: 450px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+#header-logo:hover {
+    transform: scale(1.05);
+    /* filter: drop-shadow(5px 5px 5px rgba(255, 195, 103, 0.625)); */
+}
+
+#dates {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+#join-button {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    border: 2px solid rgb(213, 176, 148);
+    background-color: rgb(213, 176, 148);
+    padding: 12px 48px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+#join-button:hover {
+    color: white;
+    padding: 12px 64px;
+    border-radius: 25px;
+    border-color: rgb(192, 153, 133);
+    text-decoration: none;
+    background-color: rgb(192, 153, 133);
+}
+
+#about-div {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    font-weight: 700;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+#about-more-text {
+    display: none;
+}
+
+#read-more-button {
+    background-color: rgba(255, 195, 103, 1.0);
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    border-radius: 10px;
+    padding: 12px 48px;
+    transition: all 0.5s;
+}
+
+#read-more-button:hover {
+    color: white;
+    background-color: rgba(247, 144, 64, 1.0);
+    border-radius: 25px;
+    padding: 12px 64px;
+}
+
+#schedule-extra-button {
+    margin-top: 1050px;
+    background-color: rgba(255, 195, 103, 1.0);
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    border-radius: 10px;
+    padding: 12px 48px;
+    transition: all 0.5s;
+}
+
+#schedule-extra-button:hover {
+    background-color: rgba(247, 144, 64, 1.0);
+    border-radius: 25px;
+    padding: 12px 64px;
+    text-decoration: none;
+}
+
+#schedule-div {
+    background: linear-gradient(313deg, rgba(2, 0, 36, 1) 0%, rgba(188, 255, 229, 1) 0%, rgba(197, 239, 246, 1) 61%);
+    width: 100%;
+    height: 980px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+#days {
+    margin-top: 115px;
+    width: 20%;
+    float: left;
+    text-align: right;
+}
+
+.day-text {
+    font-weight: 700;
+    padding-right: 20px;
+}
+
+#timings {
+    white-space: nowrap;
+    float: left;
+    width: 80%;
+    margin-top: 50px;
+    overflow-x: scroll;
+}
+
+.time-column {
+    text-align: left;
+    position: relative;
+    width: 325px;
+    /* 26.66% */
+    display: inline-block;
+    vertical-align: top;
+    margin: auto;
+    border-left: 1px solid black;
+}
+
+.time-text {
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+.event {
+    color: white;
+    background-color: rgb(127, 209, 134);
+    width: 95%;
+    height: 130px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    padding: 15px 0px 0px 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+}
+
+.event:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(124, 194, 130);
+}
+
+.placeholder {
+    visibility: hidden;
+}
+
+.special {
+    background-color: rgb(255, 195, 103);
+}
+
+.special:hover {
+    background-color: rgb(245, 175, 71);
+}
+
+.event-modal {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding: 20px;
+    /* Location of the box */
+    width: 400px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: white;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.25);
+}
+
+.icon {
+    transform: scale(1.5);
+}
+
+#sponsors-div {
+    width: 100%;
+    text-align: center;
+    font-family: 'Century Gothic', sans-serif;
+    background-color: white;
+}
+
+.sponsor {
+    display: inline-block;
+    margin: 25px 50px;
+    max-width: 90%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
+.sp-gold {
+    -webkit-filter: drop-shadow(20px 20px 20px #ffd700);
+    filter: drop-shadow(20px 20px 20px #ffd700);
+}
+
+.sp-silver {
+    -webkit-filter: drop-shadow(20px 20px 20px #606568);
+    filter: drop-shadow(20px 20px 20px #606568);
+}
+
+.sp-bronze {
+    -webkit-filter: drop-shadow(20px 20px 20px #CD7F32);
+    filter: drop-shadow(20px 20px 20px #CD7F32);
+}
+
+.theme {
+    margin: 0px 0px;
+    max-width: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.theme:hover {
+    transform: scale(1.10);
+}
+
+.sponsor:hover {
+    transform: scale(1.05);
+}
+
+#prospectus-button {
+    background-color: rgba(255, 195, 103, 1.0);
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+    padding: 12px 48px;
+    transition: all 0.5s;
+}
+
+#prospectus-button:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(247, 144, 64, 1.0);
+    border-radius: 25px;
+    padding: 12px 64px;
+}
+
+#team-div {
+    background: linear-gradient(313deg
+            /* 223deg */
+            , rgba(2, 0, 36, 1) 0%, rgba(188, 255, 229, 1) 0%, rgba(197, 239, 246, 1) 61%);
+    width: 100%;
+    font-family: 'Century Gothic', sans-serif;
+    text-align: center;
+}
+
+#faq-div {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+
+.faq {
+    font-family: 'Poppins', sans-serif;
+    width: 75vw;
+    display: inline-block;
+    margin: 20px;
+    padding: 24px 36px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.faq-answer {
+    font-family: 'Poppins', sans-serif;
+    display: none;
+    font-size: 24px;
+}
+
+#footer {
+    width: 100%;
+    background-color: linear-gradient(313deg, rgba(2, 0, 36, 1) 0%, rgba(188, 255, 229, 1) 0%, rgba(197, 239, 246, 1) 61%);
+    height: 100%;
+    text-align: center;
+    color: rgb(127, 209, 134);
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.footerMJ {
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.footerMJ:hover {
+    letter-spacing: 1px;
+}
+
+.footerGDC {
+    font-weight: 600;
+    color: rgb(255, 195, 103);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.footerGDC:hover {
+    letter-spacing: 1px;
+}
+
+.legal {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: auto;
+}
+
+@media screen and (max-width: 1100px) {
+    .navbutton {
+        font-size: 20px;
+        padding: 12px 18px;
+        border-bottom: solid 2px rgb(127, 209, 134);
+    }
+
+    #navbar-logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .faq {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .legal {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .navbutton {
+        font-size: 28px;
+        padding: 12px 96px;
+        border-bottom: solid 3px rgb(127, 209, 134);
+        margin-bottom: 20px;
+    }
+
+    #golds {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    #navbar-logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sponsor {
+        margin: 25px 0px;
+        max-width: 80vw;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    #header-logo {
+        width: 95vw;
+        height: 95vw;
+        /* max-width: 50vw; */
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #prospectus-button {
+        background-color: rgba(255, 195, 103, 1.0);
+        cursor: pointer;
+        font-size: 6.5vw;
+        font-weight: 600;
+        color: white;
+        border-radius: 10px;
+        padding: 6px 24px;
+        transition: all 0.5s;
+    }
+
+    #prospectus-button:hover {
+        padding: 6px 24px;
+    }
+}
+
+#division-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+html, body {
+    width: 100%;
+    background: linear-gradient(313deg, rgba(2, 0, 36, 1) 0%, rgba(188, 255, 229, 1) 0%, rgba(197, 239, 246, 1) 61%);
+}
+
+p,h1,h2 {
+    color:#3e738e;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.game {
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.game:hover {
+    transform: scale(1.05);
+}
+
+.game-name {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+
+.table-wrapper {
+    max-width: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+    margin: 15px
+}
+
