@@ -536,3 +536,15 @@ h1 {
     height:60px;
 }
 
+
+.popup_section {
+    font-family: 'Poppins', sans-serif;
+    width: 75vw;
+    display: inline-block;
+    margin: 20px;
+    padding: 24px 36px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+

@@ -39,6 +39,44 @@ function closeModal(modalName) {
     modal.style.display = "none";
 }
 
+
+function expandSection(container_id, content_id) {
+    var content = document.getElementById(content_id);
+    var container = document.getElementById(container_id);
+
+    if (content.style.display === "block") { // compress
+
+        content.style.display = "none";
+        container.style.height = "auto";
+        container.style.backgroundColor = "initial";
+
+    } else { // expand
+
+        content.style.display = "block";
+        container.style.height = "auto";
+        container.style.backgroundColor = "rgba(255, 195, 103, 1.0)";
+
+    }
+
+}
+
+function enterHoverSection(container, content) {
+
+    if (document.getElementById(content).style.display != "block") {
+        document.getElementById(container).style.backgroundColor = "rgba(255, 195, 103, 0.5)";
+    }
+
+}
+
+function exitHoverSection(container, content) {
+
+    if (document.getElementById(content).style.display != "block") {
+        document.getElementById(container).style.backgroundColor = "rgba(255, 195, 103, 0)";
+    }
+
+}
+
+
 function expandFAQ(i) {
     var faq = document.getElementsByClassName('faq')[i];
     var faqText = document.getElementsByClassName('faq-answer')[i];
