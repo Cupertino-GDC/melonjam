@@ -156,6 +156,12 @@ function convertTimeToText(time, options = {roundUp: false, display: ["sec","min
 
 setInterval(function() {
     for (var element of document.getElementsByClassName("timer")) {
-        element.innerHTML = convertTimeToText(element.getAttribute("time") - new Date().getTime());
+        var diff = element.getAttribute("time") - new Date().getTime();
+        if (diff <= 0) {
+            element.innerHTML = "NOW!";
+        }
+        else {
+            element.innerHTML = convertTimeToText(diff);
+        }
     }
 }, 1000);
