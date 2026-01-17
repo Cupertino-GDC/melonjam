@@ -14,6 +14,8 @@ html {
 #customers th {
     border: 1px solid #ddd;
     padding: 8px;
+    font-size: 32px;
+    color: #3e738e;
 }
 
 #customers tr:nth-child(even) {
@@ -557,6 +559,8 @@ p,h1,h2 {
 h1 {
     font-size: 42px;
     font-weight: 600;
+    font-family: 'Century Gothic', sans-serif;
+    text-align: center;
 }
 
 .sponsor-spacer {
@@ -584,8 +588,8 @@ h1 {
 }
 
 .game-name {
-    font-size: 42px;
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 300;
 }
 
 .table-wrapper {
@@ -594,3 +598,11 @@ h1 {
     margin: 15px;
 }
 
+p {
+    width: 80vw;
+    margin: auto;
+    line-height: 1.75;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
