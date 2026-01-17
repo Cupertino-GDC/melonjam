@@ -559,6 +559,21 @@ h1 {
     font-weight: 600;
 }
 
+.sponsor-spacer {
+    height: 60px;
+}
+
+.popup_section {
+    font-family: 'Poppins', sans-serif;
+    width: 75vw;
+    display: inline-block;
+    margin: 20px;
+    padding: 24px 36px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
 .game {
     object-fit: cover;
     cursor: pointer;
@@ -573,27 +588,9 @@ h1 {
     font-weight: 600;
 }
 
-
 .table-wrapper {
-    max-width: 100%;
     overflow-y: auto;
     overflow-x: auto;
-    margin: 15px
-}
-
-.sponsor-spacer {
-    height:60px;
-}
-
-
-.popup_section {
-    font-family: 'Poppins', sans-serif;
-    width: 75vw;
-    display: inline-block;
-    margin: 20px;
-    padding: 24px 36px;
-    cursor: pointer;
-    border-radius: 20px;
-    transition: all 0.3s;
+    margin: 15px;
 }
 
