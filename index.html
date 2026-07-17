@@ -84,6 +84,24 @@
 		color: white;
 	}
 
+	 @font-face {
+            font-family: 'GothicBold';
+            src: url('fonts/gothicb.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+	.award-title {
+		  font-family: 'GothicBold', Arial;
+		  font-size: 1.4em; 
+		  font-weight: bold;
+    }
+
+	.award-description {       
+		  font-family: 'GothicBold', Arial;
+		  font-size: 1.1em; 
+	}
+
 	@media (max-width: 1250px) {
 		#customers {
 			display: block !important;
@@ -99,6 +117,7 @@
 			display: none;
 		}
 	}
+
 </style>
 
 <body>
@@ -254,8 +273,29 @@
 		</div>
 		<br><br>
 
+		<h1> Awards </h1>
+		<h2 class = award-title> Novice </h2>
+			<p class = "award-description">1st: 1x Aseprite key, 1x PyxelEdit key, 100€ WeLoveIndies voucher, Up to 4x Craftpix 1 year memberships (1 per team member)</p>
+			<p class = "award-description">2nd: 1x Aseprite key, 1x PyxelEdit key, 100€ WeLoveIndies voucher, Up to 4x Craftpix 1 year memberships (1 per team member)</p>
+			<p class = "award-description">3rd: 1x Aseprite key, 100€ WeLoveIndies voucher, Up to 4x Craftpix 1 year memberships (1 per team member)</p>
+		<h2 class = award-title> Intermediate</h2>
+			<p class = "award-description" >1st: 1x Aseprite key, 1x PyxelEdit key, 100€ WeLoveIndies voucher, Up to 4x Craftpix 1 year memberships (1 per team member)</p>
+			<p class = "award-description">2nd: 1x Aseprite key, 100€ WeLoveIndies voucher, Up to 4x Craftpix 1 year memberships (1 per team member)</p>
+			<p class = "award-description">3rd: 1x Aseprite key, 100€ WeLoveIndies voucher, Up to 4x Craftpix 1 year memberships (1 per team member)</p>
+		<h2 class = award-title> Advanced </h2>
+			<p class = "award-description">1st: 1x Aseprite key, 1x PyxelEdit key, 100€ WeLoveIndies voucher, Up to 4x Craftpix 1 year memberships (1 per team member)</p>
+			<p class = "award-description">2nd: 1x Aseprite key, 100€ WeLoveIndies voucher, Up to 4x Craftpix 1 year memberships (1 per team member)</p>
+			<p class = "award-description">3rd: 1x Aseprite key, 100€ WeLoveIndies voucher, Up to 4x Craftpix 1 year memberships (1 per team member)</p>
 
-		<h1>About MelonJam:</h1>
+		<br>
+		<br>
+		<br>
+		
+		</div>
+		<br>
+		
+		<h1 style="text-align: center"> About MelonJam:</h1>
+		<br>
 		<h1
 			style="width: 80vw; margin: auto; line-height: 1.75; font-weight: 400; font-size: 30px; font-family: 'Poppins', sans-serif;">
 			MelonJam is a 3-day long game jam (an event where people get together and make small games, normally in a short time span). 
@@ -280,8 +320,8 @@
 				<br><br>
 			</span>
 		</h1>
-		<a id="read-more-button" onclick="readMore()">Read more</a>
-		<br><br><br><br>
+		<a id="read-more-button" style="text-align: center;" onclick="readMore()">Read more</a>
+	<br><br><br><br>
 	</div>
 	
 	<br>
@@ -434,20 +474,33 @@
 		<br><br>
 		<h1 style="font-size: 42px; font-weight: 600; font-family: 'Century Gothic', sans-serif;">MelonJam Sponsors &
 			Partners:</h1>
-
-
-		<br>
-
+		<h1 style="font-size: 42px; font-weight: 600; font-family: 'Century Gothic', sans-serif;">Powered By</h1>
+		
+				<img src="images/MelonJam 7/PoweredByHackPlusLogo.png" alt="Hack+" class="sponsor" style="-webkit-filter: drop-shadow(20px 20px 20px #579dff);
+		    filter: drop-shadow(20px 20px 20px #579dff); height:20vh"  onclick="window.open('https://hackplus.io')">
+				<br><br>
+		
 		<h1 style="font-size: 42px; font-weight: 600; font-family: 'Century Gothic', sans-serif;">Gold Tier</h1>
 		
+		<img src="images/MelonJam 7/GoldTierSyntyLogo.png" alt="Synty" class="sponsor sp-gold" height="120px"
+			onclick="window.open('https://syntystore.com/')">
+		<img src="images/MelonJam 7/dynamedio.png" alt="Dynamedio" class="sponsor sp-gold" height="120px"
+			onclick="window.open('https://weloveindies.com/')">
+
 
 		<h1 style="font-size: 42px; font-weight: 600; font-family: 'Century Gothic', sans-serif;">Silver Tier</h1>
 		
+		<img src="images/MelonJam 7/SilverTierCraftPix.net.png" alt="Craftpix" class="sponsor sp-silver" height="120px"
+			onclick="window.open('https://craftpix.net/')">
+		<br><br>
 
 		<h1 style="font-size: 42px; font-weight: 600; font-family: 'Century Gothic', sans-serif;">Bronze Tier</h1>
 
+		<img src="images/MelonJam 7/BronzePyxelEditlogo.png" alt="PyxelEdit" class="sponsor sp-bronze" height="120px"
+			onclick="window.open('https://www.pyxeledit.com/')">
 
-		<h1 style="font-size: 42px; font-weight: 600; font-family: 'Century Gothic', sans-serif;">Powered By</h1>
+		<img src="images/MelonJam 7/BronzeTierAsePrite logo.png" alt="Aesprite" class="sponsor sp-bronze" height="120px"
+			onclick="window.open('https://www.aseprite.org/')">
 
 		<img src="" alt="" class="sponsor" style="-webkit-filter: drop-shadow(20px 20px 20px #579dff);
     filter: drop-shadow(20px 20px 20px #579dff); height:20vh"  onclick="window.open('')">
