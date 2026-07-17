@@ -151,8 +151,8 @@
 			 <p id="demo" style="font-size: 50px; font-weight: 600; color: #ffc367ff;font-family: 'Century Gothic', sans-serif;"></p>
 
 			<script>
-				// Set the date we're counting down to (UTC)
-				var countDownDate = new Date("2025-07-17T17:00:00Z");
+				// Set the date we're counting down to (UTC) — 10am PT / 5pm UTC on 7/17/2026
+				var countDownDate = new Date("2026-07-17T17:00:00Z");
 
 				// Update the count down every 1 second
 				var x = setInterval(function () {
@@ -172,15 +172,16 @@
 					document.getElementById("demo").innerHTML = days + "d " + hours + "h "
 						+ minutes + "m " + seconds + "s ";
 
-					// If the count down is over, write some text 
+					// If the count down is over, reveal the theme
 					if (distance < 0) {
 						clearInterval(x);
-						document.getElementById("demo").innerHTML = "unchosen";
+						document.getElementById("demo").innerHTML = "SPARK!";
+						document.getElementById("theme-image").style.display = "block";
 					}
 				}, 1000);
-			</script> -->
+			</script>
 		</h1>
-		<img src="" alt="Theme" class="theme">
+		<img src="images/MelonJam 7/theme_image.png" alt="Theme" class="theme" id="theme-image" style="display:none; margin-left: auto; margin-right: auto;"
 		<br><br>
 		<!-- <h1 style="font-size: 50px; font-weight: 600; color: #0e5f41;font-family: 'Century Gothic', sans-serif;">The theme is <em>Compound!</em></h1> -->
 		<br><br>
